@@ -1,19 +1,15 @@
 <template>
     <div class="block">
-        <div class="row">
-            <div class="col-lg-12">
-                <h6><i><img src="/img/icons/Ellipse.svg" /></i>{{ block.subtitle }}</h6>
-                <h1>{{ block.title }}</h1>
 
-                <div class="cards">
+        <h6><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
+        <h1>{{ block.title }}</h1>
 
-                        <Card :card="card" v-for="card of block.cards" :key="card.id" class="card" />
-
-                </div>
-
-                <div v-if="block.picture" class="background-image d-none d-lg-block"></div>
-            </div>
+        <div class="cards">
+            <Card :card="card" v-for="card of block.cards" :key="card.id" class="card"/>
         </div>
+
+        <div v-if="block.picture" class="background-image d-none d-lg-block"></div>
+
     </div>
 </template>
 
@@ -29,15 +25,7 @@
         props: {
             block: Object,
         },
-        computed: {
-            columnClass() {
-                if ((this.block.cards.length >= 5)) {
-                    return 'col-lg-4';
-                } else {
-                    return 'col-lg-' + 12 / this.block.cards.length;
-                }
-            },
-        },
+        computed: {},
     }
 
 </script>

@@ -3,11 +3,12 @@
 #picture-title {
   position: relative;
   display: block;
+  //height:auto;
 }
 
 .picture-title {
   /*height: 718px;*/
-  height: 1087px;
+  min-height: 1087px;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/delight-ice-coffee-box-2813280.jpeg");
   background-size: cover;
@@ -26,7 +27,7 @@
   text-align: center;
 
   color: #FFFFFF;
-  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  //border: 0.5px solid rgba(0, 0, 0, 0.2);
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -72,13 +73,19 @@
 .picture-title .cards {
   position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   /*top: 87%;*/
   top: 718px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .picture-title .card {
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-basis: 50%;
+
   height: 270px;
 
   background: #FFFFFF;
@@ -87,4 +94,18 @@
   box-sizing: border-box;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
+
+.picture-title .more-cards {
+
+  @media (max-width: 768px) {
+    flex-basis: 50%;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
 }

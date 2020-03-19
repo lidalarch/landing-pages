@@ -1,24 +1,18 @@
 <template>
-    <div id="PictureTitle">
-        <div class="row">
-            <div class="picture-title col-lg-12">
-                <h1>{{ promo.title }}</h1>
-                <button class="btn btn-danger">
-                    <a
-                            :href="promo.button.url"
-                            target="_blank"
-                    >
-                        {{ promo.button.text }}
-                    </a>
-                </button>
-                <div class="cards row">
+    <div id="PictureTitle" class="picture-title">
 
-                    <Card :card="card" v-for="card of promo.cards" :key="card.id" :class="'card ' + columnClass"/>
+        <h1>{{ promo.title }}</h1>
 
+        <button class="btn btn-danger">
+            <a :href="promo.button.url" target="_blank">
+                {{ promo.button.text }}
+            </a>
+        </button>
 
-                </div>
-            </div>
+        <div class="cards">
+            <Card :card="card" v-for="card of promo.cards" :key="card.id" :class="'card ' + moreCardsClass" />
         </div>
+
     </div>
 </template>
 
@@ -73,31 +67,13 @@
             };
         },
         computed: {
-            columnClass() {
-                if ((this.promo.cards.length >= 5)) {
-                    return 'col-lg-4';
+            moreCardsClass() {
+                if ((this.promo.cards.length >= 4)) {
+                    return 'more-cards';
                 } else {
-                    return 'col-lg-' + 12 / this.promo.cards.length;
+                    return '';
                 }
             },
-
-            cardsView() {
-                let result = '';
-                if ((this.promo.cards.length >= 4)) {
-                    for (let card of this.promo.cards) {
-                        if (card.id % 2 === 1) {
-                            result += '<Card :card="' + card + '"/>';
-                        } else {
-                            result += '<Card :card="' + card + '"/><div class="w-100 d-none d-md-block d-lg-none"></div>';
-                        }
-                    }
-                } else {
-                    for (let card of this.promo.cards) {
-                        result += '<Card :card="' + card + '"/>';
-                    }
-                }
-                return result;
-            }
         },
     }
 
