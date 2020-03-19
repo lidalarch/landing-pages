@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  node:
+    image: node:10
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - PORT=${PORT}
+      - HOST=0.0.0.0
+    user: "1000:1000"
+    command: /app/entrypoint.sh

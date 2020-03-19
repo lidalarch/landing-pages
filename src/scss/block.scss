@@ -1,0 +1,112 @@
+
+
+.block {
+  position: relative;
+  display: block;
+  /*height: 1087px;*/
+}
+
+.block h1 {
+  position: relative;
+  top: 109px;
+
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+
+  text-align: center;
+
+  color: #3F3D56;
+
+}
+
+.block h6 {
+  position: relative;
+  top: 100px;
+  width: 191px;
+  height: 10px;
+  margin: auto;
+
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #686868;
+}
+
+.block .cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  top: 219px;
+  z-index: 2;
+
+}
+
+.block .card {
+  flex-basis: 30%;
+
+  height: 280px;
+  margin-bottom: 30px;
+
+  background: #FFFFFF;
+
+  border: 0.5px solid #E5E5E5;
+  box-sizing: border-box;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    flex-basis: 45%;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+
+.block .card:last-child {
+  flex-basis: 45%;
+
+  @media (max-width: 768px) {
+    flex-basis: 94%;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+.block .card:nth-last-child(2) {
+  flex-basis: 45%;
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+
+
+.background-image {
+  position: relative;
+  width: 85%;
+  height: 297px;
+  margin: auto;
+  z-index: 1;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/adult-business-deal-colleague-1265902.jpeg');
+  background-size: cover;
+  background-position: center center;
+
+  border: 0.5px solid #E5E5E5;
+  box-sizing: border-box;
+}
+i {
+  margin-right: 4px;
+}
