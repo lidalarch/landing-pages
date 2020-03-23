@@ -1,33 +1,24 @@
 
 
-.block {
-  position: relative;
+.block-details {
   display: block;
-  //min-height: 1087px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  @media (max-width: 768px) {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  @media (max-width: 375px) {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
-.block h1 {
-  position: relative;
-  top: 109px;
-
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 44px;
-
-  text-align: center;
-
-  color: #3F3D56;
-
-}
-
-.block h6 {
-  position: relative;
-  top: 100px;
-  width: 191px;
+.block-details h6 {
   height: 10px;
   margin: auto;
+  margin-top: 100px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -42,19 +33,33 @@
   color: #686868;
 }
 
-.block .cards {
-  position: relative;
+.block-details h1 {
+  margin-bottom: 55px;
+
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+
+  text-align: center;
+
+  color: #3F3D56;
+
+}
+
+.block-details .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: space-evenly;
-  top: 219px;
+
   z-index: 2;
 
 }
 
-.block .card {
+.block-details .card {
   flex-basis: 30%;
 
   height: 280px;
@@ -75,29 +80,12 @@
   }
 }
 
-.block .card:last-child {
-  flex-basis: 45%;
-
-  @media (max-width: 768px) {
-    flex-basis: 94%;
-  }
-  @media (max-width: 375px) {
-    flex-basis: 100%;
-  }
-}
-.block .card:nth-last-child(2) {
-  flex-basis: 45%;
-  @media (max-width: 375px) {
-    flex-basis: 100%;
-  }
-}
-
-
-.background-image {
-  position: relative;
+.block-details .background-image {
   width: 85%;
   height: 297px;
   margin: auto;
+  margin-top: -330px;
+
   z-index: 1;
 
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/adult-business-deal-colleague-1265902.jpeg');
@@ -107,6 +95,6 @@
   border: 0.5px solid #E5E5E5;
   box-sizing: border-box;
 }
-i {
+.block-details i {
   margin-right: 4px;
 }

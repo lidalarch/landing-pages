@@ -1,7 +1,7 @@
 <template>
-    <div class="block">
+    <div :class="'block-details ' + block.class">
 
-        <h6><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
+        <h6 v-if="block.subtitle"><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
         <h1>{{ block.title }}</h1>
 
         <div class="cards">
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-    import '../scss/block.scss';
+
     import Card from './Card.vue'
 
     export default {
-        name: 'Block',
+        name: 'BlockDetails',
         components: {
             Card,
         },

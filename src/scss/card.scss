@@ -1,16 +1,17 @@
 
 
 .icon {
-  padding: 10px;
+  padding: 15px;
+}
+
+.icon img {
+  max-width: 100%;
 }
 
 .text {
-  /*  position: absolute;
-   width: 351px; */
   height: 59px;
-  left: 24px;
-  top: 56px;
-  padding: 10px;
+  padding: 15px;
+
   z-index: 2;
 
   font-family: Montserrat, sans-serif;
@@ -27,6 +28,8 @@
   bottom: 30px;
   right: 5%;
   width: 55%;
+  max-height: 230px;
+
   z-index: 1;
 }
 

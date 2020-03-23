@@ -1,0 +1,46 @@
+
+
+.testing {
+
+}
+
+.testing h6 {
+
+}
+
+.testing h1 {
+
+}
+
+.testing .cards {
+
+}
+
+.testing .card {
+
+}
+
+.testing .card:last-child {
+  flex-basis: 45%;
+
+  @media (max-width: 768px) {
+    flex-basis: 94%;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+.testing .card:nth-last-child(2) {
+  flex-basis: 45%;
+
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+
+.testing .background-image {
+
+}
+.testing i {
+
+}
