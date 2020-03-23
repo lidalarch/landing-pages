@@ -8,7 +8,7 @@
             <Card :card="card" v-for="card of block.cards" :key="card.id" class="card"/>
         </div>
 
-        <div v-if="block.picture" class="background-image d-none d-lg-block"></div>
+        <div v-if="block.picture" class="background-image"></div>
 
     </div>
 </template>

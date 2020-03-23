@@ -4,6 +4,8 @@
         <BlockMain :block="blockMain"/>
         <BlockDetails :block="blockDetalis"/>
         <BlockDetails :block="blockFeedback"/>
+        <BlockDetails :block="blockPluses"/>
+        <BlockContacts :block="blockContacts"/>
     </div>
 </template>
 
@@ -13,6 +15,7 @@
     import PictureTitle from './components/PictureTitle.vue'
     import BlockMain from './components/BlockMain.vue'
     import BlockDetails from './components/BlockDetails.vue'
+    import BlockContacts from './components/BlockContacts.vue'
 
     export default {
         name: 'App',
@@ -20,6 +23,7 @@
             PictureTitle,
             BlockMain,
             BlockDetails,
+            BlockContacts,
         },
         data() {
             return {
@@ -98,7 +102,7 @@
                             num: '',
                         },
                     ],
-                    picture: '', // ../assets/adult-business-deal-colleague-1265902.jpeg',
+                    picture: '',
                 },
 
                 blockFeedback: {
@@ -192,6 +196,92 @@
                         },
                     ],
                     picture: '',
+                },
+
+                blockPluses: {
+                    class: 'pluses',
+                    title: 'Наши преимущества',
+                    subtitle: 'тестирование макетов онлайн',
+                    cards: [
+                        {
+                            text: 'Возможность тестирования любых макетов и медиафайлов',
+                            icon: '/img/icons/product.svg',
+                            picture: '',
+                            id: 1,
+                            num: '',
+                        },
+                        {
+                            text: 'Все данные и история тестирований  в любой момент доступны в личном кабинете',
+                            icon: '/img/icons/computer.svg',
+                            picture: '',
+                            id: 2,
+                            num: '',
+                        },
+                        {
+                            text: 'Результаты за 1 день',
+                            icon: '/img/icons/stopwatch.svg',
+                            picture: '',
+                            id: 3,
+                            num: '',
+                        },
+                        {
+                            text: 'Тестирование «под ключ» на одном сервисе',
+                            icon: '/img/icons/management.svg',
+                            picture: '',
+                            id: 4,
+                            num: '',
+                        },
+                        {
+                            text: 'Социологическая экспертиза анкет',
+                            icon: '/img/icons/dialog.svg',
+                            picture: '',
+                            id: 5,
+                            num: '',
+                        },
+                    ],
+                    picture: 'Yes', // ../assets/adult-business-deal-colleague-1265902.jpeg,
+                },
+
+                blockContacts: {
+                    contactCards: [
+                        {
+                            id: 1,
+                            title: 'Создайте анкету и проведите исследование самостоятельно',
+                            text: 'Более 100 готовых шаблонов анкет для разных целей',
+                            contacts: [],
+                            button: {
+                                text: 'создать опрос самостоятельно',
+                                url: 'http://vuex.vuejs.org/',
+                            },
+                            num: '01',
+                        },
+                        {
+                            id: 2,
+                            title: 'Доверьте всю организацию исследования специалистам',
+                            contacts: [
+                                {
+                                    id: 1,
+                                    icon: '/img/contacts/photo_small.jpg',
+                                    name:'Василий Жаворонков',
+                                    position:'руководитель социологической cлужбы',
+                                    mail: 'zhavoronkov@anketolog.ru',
+                                },
+                                {
+                                    id: 2,
+                                    icon: '/img/contacts/photo_small-1.jpg',
+                                    name:'Наталья Пономаренко',
+                                    position:'менеджер по работе с клиентами',
+                                    mail: 'n.ponomarenko@anketolog.ru',
+                                },
+                            ],
+                            button: {
+                                text: 'оставить заявку на исследование',
+                                url: 'http://vuex.vuejs.org/',
+                            },
+                            num: '02',
+                        },
+                    ],
+                    picture: 'Yes',
                 },
             };
         },

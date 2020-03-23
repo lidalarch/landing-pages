@@ -23,6 +23,7 @@
   box-sizing: border-box;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 0;
 
   @media (max-width: 768px) {
     flex-basis: 100%;

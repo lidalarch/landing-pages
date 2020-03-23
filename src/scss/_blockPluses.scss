@@ -1,0 +1,58 @@
+
+
+.pluses {
+
+}
+
+.pluses h6 {
+
+}
+
+.pluses h1 {
+
+}
+
+.pluses .card {
+  height: 218px;
+  border-radius: 0;
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
+
+.pluses .card .text {
+  height: 44px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.pluses .card:first-child {
+  flex-basis: 48%;
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
+
+.pluses .card:nth-child(2) {
+  flex-basis: 48%;
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+  }
+}
+
+.pluses .background-image {
+  width: 55%;
+  height: 1301px;
+  margin-right: -5%;
+  margin-top: -650px;
+
+}
+
+.pluses i {
+
+}

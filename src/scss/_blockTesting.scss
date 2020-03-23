@@ -21,17 +21,18 @@
 }
 
 .testing .card:last-child {
-  flex-basis: 45%;
+  flex-basis: 48%;
 
   @media (max-width: 768px) {
-    flex-basis: 94%;
+    flex-basis: 100%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
   }
 }
+
 .testing .card:nth-last-child(2) {
-  flex-basis: 45%;
+  flex-basis: 48%;
 
   @media (max-width: 375px) {
     flex-basis: 100%;
