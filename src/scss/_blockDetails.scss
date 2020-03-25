@@ -46,6 +46,10 @@
 
   color: #3F3D56;
 
+  @media (max-width: 375px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .block-details .cards {

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App.vue'
 import Page1 from './Page1.vue'
+import Page2 from './Page2.vue'
 
 Vue.config.productionTip = false;
 
@@ -19,6 +20,11 @@ const router = new Router({
       name:'page1',
       component: Page1,
      // props: true,
+    },
+    {
+      path: '/page2',
+      name:'page2',
+      component: Page2,
     },
   ]
 });

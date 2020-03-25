@@ -1,5 +1,5 @@
 <template>
-    <div id="page1" class="container-fluid">
+    <div id="page1" class="container-fluid page">
         <PictureTitle :promo="promo"/>
         <BlockMain :block="blockMain"/>
         <BlockDetails :block="blockDetalis"/>
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-    //import './scss/app.scss';
 
     import PictureTitle from './components/PictureTitle.vue'
     import BlockMain from './components/BlockMain.vue'
@@ -202,7 +201,7 @@
                 },
 
                 blockCarousel: {
-                    class: '',
+                    class: 'page1-carousel',
                     title: 'Как это работает',
                     subtitle: 'тестирование макетов онлайн',
                     text: 'Загружайте макеты в SaaS-конструктор опросов Анкетолог',

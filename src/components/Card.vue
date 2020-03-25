@@ -5,7 +5,8 @@
             <img :src="card.icon" alt="icon"/>
         </div>
 
-        <div v-if="card.text" class="text">{{ card.text }}</div>
+        <p v-if="card.text" class="text">{{ card.text }}</p>
+        <p v-if="card.subtext" class="subtext">{{ card.subtext }}</p>
 
         <div v-if="card.picture" class="picture">
             <img :src="card.picture"/>

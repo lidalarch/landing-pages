@@ -34,7 +34,7 @@
 
         <div v-if="block.picture" class="background-image"></div>
 
-        <button class="btn btn-danger">
+        <button v-if="block.button.text" class="btn btn-danger">
             <a :href="block.button.url" target="_blank">
                 {{ block.button.text }}
             </a>

@@ -1,7 +1,8 @@
 <template>
     <div id="app" class="container-fluid">
 
-        <router-link to="/page1">Страница 1</router-link>
+        <router-link to="/page1" class="rlink">Страница 1</router-link>
+        <router-link to="/page2" class="rlink">Страница 2</router-link>
 
         <router-view class="view"></router-view>
 

@@ -1,0 +1,21 @@
+
+@import "blockWork";
+@import "blockPlusesPage2";
+
+//@import "blockContacts";
+
+
+#page2 {
+  padding: 0;
+  margin: 0;
+}
+
+#page2 .picture-title {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/woman-standing-beside-pineapple-fruits-2292919.jpeg");
+  background-size: cover;
+  background-position: center 0;
+}
+
+#page2 .block-contacts {
+  margin-top: 660px;
+}

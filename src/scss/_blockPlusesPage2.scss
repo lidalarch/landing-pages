@@ -1,0 +1,64 @@
+
+
+.page2-pluses {
+
+}
+
+.page2-pluses h6 {
+
+}
+
+.page2-pluses h1 {
+
+}
+
+.page2-pluses .card {
+  flex-basis: 48%;
+  min-height: 328px;
+
+  @media (max-width: 768px) {
+    flex-basis: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+    height: 365px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+.page2-pluses .card .text {
+  //height: 44px;
+  padding-bottom: 8px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+//.page2-pluses .card:first-child {
+//  flex-basis: 48%;
+//
+//  @media (max-width: 768px) {
+//    flex-basis: 100%;
+//  }
+//}
+
+//.page2-pluses .card:nth-child(2) {
+//  flex-basis: 48%;
+//
+//  @media (max-width: 768px) {
+//    flex-basis: 100%;
+//  }
+//}
+
+.page2-pluses .background-image {
+
+}
+
+.page2-pluses i {
+
+}

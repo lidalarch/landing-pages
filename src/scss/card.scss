@@ -1,16 +1,20 @@
 
 
 .icon {
-  padding: 15px;
+  margin-left: 32px;
+  margin-top: 32px;
 }
 
 .icon img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+}
 .text {
-  height: 59px;
-  padding: 15px;
+  //height: 59px;
+  padding: 32px;
 
   z-index: 2;
 
@@ -21,6 +25,22 @@
   line-height: 29px;
 
   color: #3F3D56;
+}
+
+.subtext {
+  //height: 94px;
+  padding: 32px;
+  padding-top: 8px;
+
+  z-index: 2;
+
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #2B2B2B;
 }
 
 .picture img {
