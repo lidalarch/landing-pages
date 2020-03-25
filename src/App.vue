@@ -4,6 +4,7 @@
         <BlockMain :block="blockMain"/>
         <BlockDetails :block="blockDetalis"/>
         <BlockDetails :block="blockFeedback"/>
+        <BlockCarousel :block="blockCarousel"/>
         <BlockDetails :block="blockPluses"/>
         <BlockContacts :block="blockContacts"/>
     </div>
@@ -15,6 +16,7 @@
     import PictureTitle from './components/PictureTitle.vue'
     import BlockMain from './components/BlockMain.vue'
     import BlockDetails from './components/BlockDetails.vue'
+    import BlockCarousel from './components/BlockCarousel.vue'
     import BlockContacts from './components/BlockContacts.vue'
 
     export default {
@@ -23,6 +25,7 @@
             PictureTitle,
             BlockMain,
             BlockDetails,
+            BlockCarousel,
             BlockContacts,
         },
         data() {
@@ -102,7 +105,7 @@
                             num: '',
                         },
                     ],
-                    picture: '',
+                    picture: false,
                 },
 
                 blockFeedback: {
@@ -195,7 +198,36 @@
                             num: '',
                         },
                     ],
-                    picture: '',
+                    picture: false,
+                },
+
+                blockCarousel: {
+                    class: '',
+                    title: 'Как это работает',
+                    subtitle: 'тестирование макетов онлайн',
+                    text: 'Загружайте макеты в SaaS-конструктор опросов Анкетолог',
+                    slides: [
+                        {
+                            id: 1,
+                            picture: '/img/slides/slide-1.gif',
+                            isActive: true,
+                        },
+                        {
+                            id: 2,
+                            picture: '/img/slides/slide-2.gif',
+                            isActive: false,
+                        },
+                        {
+                            id: 3,
+                            picture: '/img/slides/slide-3.gif',
+                            isActive: false,
+                        },
+                    ],
+                    picture: false,
+                    button: {
+                        text: 'протестировать свой макет',
+                        url: 'http://vuex.vuejs.org/',
+                    },
                 },
 
                 blockPluses: {
@@ -239,7 +271,7 @@
                             num: '',
                         },
                     ],
-                    picture: 'Yes', // ../assets/adult-business-deal-colleague-1265902.jpeg,
+                    picture: true,
                 },
 
                 blockContacts: {
@@ -281,13 +313,172 @@
                             num: '02',
                         },
                     ],
-                    picture: 'Yes',
+                    picture: true,
+                },
+
+                footer: {
+                    lists: [
+                        {
+                            name: 'constr',
+                            title: 'Конструктор анкет',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Тарифы',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'Возможности',
+                                    link: '#',
+                                },
+                                {
+                                    id: 3,
+                                    text: 'Образцы анкет',
+                                    link: '#',
+                                },
+                                {
+                                    id: 4,
+                                    text: 'Онлайн-панель',
+                                    link: '#',
+                                },
+                                {
+                                    id: 5,
+                                    text: 'Демо-версия онлайн-панели',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'resp',
+                            title: 'Панель респондентов',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Призы и промокоды',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'Вопрос-ответ',
+                                    link: '#',
+                                },
+                                {
+                                    id: 3,
+                                    text: 'Для спонсоров',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'shop',
+                            title: 'Магазин Исследований',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Каталог исследований',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'О магазине исследований',
+                                    link: '#',
+                                },
+                                {
+                                    id: 3,
+                                    text: 'Экспертам',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'anketolog',
+                            title: 'Информационный ресурс Анкетолог',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Общедоступные исследования',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'Публикации',
+                                    link: '#',
+                                },
+                                {
+                                    id: 3,
+                                    text: 'Для СМИ',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'info',
+                            title: 'Информация',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'База знаний',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'О проекте',
+                                    link: '#',
+                                },
+                                {
+                                    id: 3,
+                                    text: 'Документы',
+                                    link: '#',
+                                },
+                                {
+                                    id: 4,
+                                    text: 'Конаткты',
+                                    link: '#',
+                                },
+                                {
+                                    id: 5,
+                                    text: 'Блог',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'serv',
+                            title: 'Услуги',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Опросы «под ключ»',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'Маркетинговые исследования',
+                                    link: '#',
+                                },
+                            ],
+                        },
+                        {
+                            name: 'partn',
+                            title: 'Партнерская программа',
+                            items: [
+                                {
+                                    id: 1,
+                                    text: 'Программа привлечения респондентов для онлайн-панели',
+                                    link: '#',
+                                },
+                                {
+                                    id: 2,
+                                    text: 'Программа привлечения заказчиков маркетинговых исследований',
+                                    link: '#',
+                                },
+
+                            ],
+                        },
+                    ],
                 },
             };
         },
     }
 </script>
-
-<style lang="scss">
-
-</style>

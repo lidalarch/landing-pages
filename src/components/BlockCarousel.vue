@@ -1,0 +1,79 @@
+<template>
+    <div :class="'block-carousel ' + block.class">
+
+        <h6 v-if="block.subtitle"><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
+        <h1>{{ block.title }}</h1>
+        <p>{{ block.text }}</p>
+
+        <div id="carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li :class="{active: slide.isActive}"
+                    v-for="slide of block.slides" :key="slide.id"
+                    data-target="#carousel" :data-slide-to="slide.id"></li>
+            </ol>
+
+            <div class="item-prev"></div>
+            <div class="carousel-inner" role="listbox">
+                <div :class="'carousel-item ' + (slide.isActive ? 'active' : '')"
+                     v-for="slide of block.slides" :key="slide.id">
+                    <img :src="slide.picture" class="d-block w-100" :alt="slide.id">
+                </div>
+            </div>
+            <div class="item-next"></div>
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div v-if="block.picture" class="background-image"></div>
+
+        <button class="btn btn-danger">
+            <a :href="block.button.url" target="_blank">
+                {{ block.button.text }}
+            </a>
+        </button>
+
+    </div>
+</template>
+
+<script>
+   import $ from 'jquery';
+
+    export default {
+        name: 'BlockCarousel',
+        components: {
+
+        },
+        props: {
+            block: Object,
+        },
+
+        computed: { },
+
+        mounted () {
+            $('.carousel.carousel-multi-item .carousel-item').each(function(){
+                // let next = $(this).next();
+                // if (!next.length) {
+                //     next = $(this).siblings(':first');
+                // }
+                // next.children(':first-child').clone().appendTo($(this));
+                //
+                // for (let i=0;i<2;i++) {
+                //     next=next.next();
+                //     if (!next.length) {
+                //         next=$(this).siblings(':first');
+                //     }
+                //     next.children(':first-child').clone().appendTo($(this));
+                // }
+            });
+        }
+    }
+
+</script>
