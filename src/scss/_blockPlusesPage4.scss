@@ -1,12 +1,12 @@
 
 
-.page2-pluses h6 {
+.page4-pluses h6 {
   @media (max-width: 768px) {
     margin-top: 50px;
   }
 }
 
-.page2-pluses .card {
+.page4-pluses .card {
   flex-basis: 48%;
   height: auto;
 
@@ -23,10 +23,18 @@
   }
 }
 
-.page2-pluses .card .text {
+.page4-pluses .card:last-child {
+  flex-basis: 100%;
+}
+
+.page4-pluses .card .text {
   padding-bottom: 8px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+}
+
+.page4-pluses .card .subtext {
+  line-height: 26px;
 }

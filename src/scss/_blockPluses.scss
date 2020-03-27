@@ -1,7 +1,6 @@
 
 
 .pluses {
-
   @media (max-width: 768px) {
     margin-left: 10%;
     margin-right: 10%;
@@ -12,16 +11,8 @@
   }
 }
 
-.pluses h6 {
-
-}
-
-.pluses h1 {
-
-}
-
 .pluses .card {
-  height: 218px;
+  min-height: 218px;
   border-radius: 0;
 
   @media (max-width: 768px) {
@@ -30,8 +21,6 @@
 }
 
 .pluses .card .text {
-  height: 44px;
-
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -58,9 +47,4 @@
   height: 1301px;
   margin-right: -5%;
   margin-top: -650px;
-
-}
-
-.pluses i {
-
 }

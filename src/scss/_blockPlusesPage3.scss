@@ -22,13 +22,10 @@
   }
 }
 
-.page3-pluses h1 {
-
-}
-
 .page3-pluses .card {
   flex-basis: 31%;
-  height: 180px;
+  height: auto;
+  min-height: 180px;
 
   @media (max-width: 768px) {
     flex-basis: 48%;
@@ -84,8 +81,8 @@
 }
 
 .page3-pluses .card .text {
+  padding: 32px;
   padding-top: 16px;
-  padding-bottom: 8px;
 
   font-weight: bold;
   font-size: 18px;
@@ -96,9 +93,5 @@
   width: 57%;
   height: 1394px;
   margin-right: -7%;
-  margin-top: -1105px;
-}
-
-.page3-pluses i {
-
+  margin-top: -806px;
 }

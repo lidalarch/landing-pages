@@ -15,7 +15,7 @@
 .block-main .card {
   flex-basis: 50%;
 
-  height: 270px;
+  min-height: 270px;
 
   background: #FFFFFF;
 
@@ -46,6 +46,5 @@
 }
 
 .block-main .card .text {
-  padding: 24px;
-  padding-top: 8px;
+  padding: 8px 24px 85px 24px;
 }

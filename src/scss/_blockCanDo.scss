@@ -4,14 +4,6 @@
   margin: 0.5%;
 }
 
-.can-do h6 {
-
-}
-
-.can-do h1 {
-
-}
-
 .can-do .cards {
   margin-left: 10%;
   margin-right: 10%;
@@ -28,7 +20,7 @@
 
 .can-do .card {
   flex-basis: 31%;
-  height: 220px;
+  min-height: 200px;
 
   @media (max-width: 768px) {
     flex-basis: 48%;
@@ -60,8 +52,4 @@
   height: 470px;
   margin: auto;
   margin-top: -605px;
-}
-
-.can-do i {
-
 }

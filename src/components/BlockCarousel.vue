@@ -10,7 +10,7 @@
             <ol class="carousel-indicators">
                 <li :class="{active: slide.isActive}"
                     v-for="slide of block.slides" :key="slide.id"
-                    data-target="#carousel" :data-slide-to="slide.id"></li>
+                    data-target="#carousel" :data-slide-to="slide.id-1"></li>
             </ol>
 
             <div class="item-prev"></div>
@@ -34,8 +34,8 @@
 
         <div v-if="block.picture" class="background-image"></div>
 
-        <button v-if="block.button.text" class="btn btn-danger">
-            <a :href="block.button.url" target="_blank">
+        <button v-if="block.button" class="btn btn-danger">
+            <a v-if="block.button.url" :href="block.button.url" target="_blank">
                 {{ block.button.text }}
             </a>
         </button>

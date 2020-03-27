@@ -1,27 +1,12 @@
 
 
-.testing {
-
-}
-
-.testing h6 {
-
-}
-
-.testing h1 {
-
-}
-
-.testing .cards {
-
-}
-
 .testing .card {
-
+ min-height: 280px;
 }
 
 .testing .card:last-child {
   flex-basis: 48%;
+  min-height: 310px;
 
   @media (max-width: 768px) {
     flex-basis: 100%;
@@ -37,11 +22,4 @@
   @media (max-width: 375px) {
     flex-basis: 100%;
   }
-}
-
-.testing .background-image {
-
-}
-.testing i {
-
 }

@@ -10,10 +10,6 @@ margin: 0.5%;
   }
 }
 
-.work h1 {
-
-}
-
 .work .cards {
   flex-wrap: nowrap;
 
@@ -27,7 +23,7 @@ margin: 0.5%;
 
 .work .card {
   flex-basis: 22%;
-  height: 400px;
+  min-height: 400px;
 
   @media (max-width: 768px) {
     flex-basis: 47%;
@@ -66,8 +62,4 @@ margin: 0.5%;
   height: 297px;
   margin: auto;
   margin-top: -230px;
-}
-
-.work i {
-
 }

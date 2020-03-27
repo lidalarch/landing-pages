@@ -1,25 +1,15 @@
 
 
-.feedback h6 {
-
-}
-
 .feedback h1 {
   margin-top: 100px;
-}
-
-.feedback .cards {
-
 }
 
 .feedback .card .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.feedback .card .icon img {
-  max-width: 100%;
+  margin: 0;
+  padding: 24px 4px;
 }
 
 .feedback .card {
@@ -27,8 +17,6 @@
 
   height: 95px;
   margin: 2%;
-  //
-  //border: 1px solid black;
 
   box-shadow: none;
   border-radius: 0;
@@ -39,12 +27,4 @@
   @media (max-width: 375px) {
     flex-basis: 43%;
   }
-}
-
-.feedback .background-image {
-
-}
-
-.feedback i {
-  margin-right: 4px;
 }

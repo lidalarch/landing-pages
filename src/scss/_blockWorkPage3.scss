@@ -20,7 +20,7 @@
 
 .page3-work .card {
   flex-basis: 31%;
-  height: 450px;
+  min-height: 450px;
 
   @media (max-width: 768px) {
     flex-basis: 48%;
@@ -31,16 +31,14 @@
 }
 
 .page3-work .card:last-child {
-
   @media (max-width: 768px) {
     margin: auto;
-  }
-  @media (max-width: 375px) {
-    //margin-right: 0;
   }
 }
 
 .page3-work .card .subtext {
   margin-top: 80px;
+  margin-bottom: 165px;
+
   line-height: 26px;
 }

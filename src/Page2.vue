@@ -3,7 +3,7 @@
         <PictureTitle :promo="promo"/>
         <BlockMain :block="blockMain"/>
         <BlockCarousel :block="blockCarousel"/>
-        <BlockDetails :block="blockDetalis"/>
+        <BlockDetails :block="blockWork"/>
         <BlockDetails :block="blockPluses"/>
         <BlockContacts :block="blockContacts"/>
     </div>
@@ -42,21 +42,18 @@
                             text: `Удобное программное обеспечение для проведения опроса и анализа
                             результатов`,
                             icon: '/img/icons/69-web-layout.svg',
-                            picture: '',
                             id: 1,
                             num: '01',
                         },
                         {
                             text: 'Портрет потребителя за 1 день',
                             icon: '/img/icons/1-user-man.svg',
-                            picture: '',
                             id: 2,
                             num: '02',
                         },
                         {
                             text: 'Подбор аудитории для опроса по всей России и странам СНГ',
                             icon: '/img/icons/39-user-list.svg',
-                            picture: '',
                             id: 3,
                             num: '03',
                         },
@@ -87,41 +84,34 @@
                         },
                     ],
                     picture: true,
-                    button: {
-                        text: '',
-                        url: '',
-                    },
+                    button: false,
                 },
 
-                blockDetalis: {
+                blockWork: {
                     class: 'work',
                     title: 'Как это работает',
                     subtitle: 'Опрос потребителей',
                     cards: [
                         {
                             text: 'Создаем анкету',
-                            icon: '',
                             picture: '/img/pictures/undraw_task_31wc.svg',
                             id: 1,
                             num: '01',
                         },
                         {
                             text: 'Подбираем аудиторию',
-                            icon: '',
                             picture: '/img/pictures/undraw_hire_te5y.svg',
                             id: 2,
                             num: '02',
                         },
                         {
                             text: 'Запускаем опрос',
-                            icon: '',
                             picture: '/img/pictures/undraw_voting_nvu7.svg',
                             id: 3,
                             num: '03',
                         },
                         {
                             text: 'Анализируем результаты',
-                            icon: '',
                             picture: '/img/pictures/undraw_marketing_v0iu.svg',
                             id: 4,
                             num: '04',
@@ -140,9 +130,7 @@
                             subtext: `исследования потребительских предпочтений на одной платформе за 2 дня.
                             История опросов сохраняется в вашем личном кабинете`,
                             icon: '/img/icons/collaboration.svg',
-                            picture: '',
                             id: 1,
-                            num: '',
                         },
                         {
                             text: 'Помощь специалистов',
@@ -150,9 +138,7 @@
                              для опроса потребителей с нуля, а также подготовить полный отчет
                              по результатам исследования`,
                             icon: '/img/icons/support.svg',
-                            picture: '',
                             id: 2,
-                            num: '',
                         },
                         {
                             text: 'Верификация',
@@ -160,17 +146,13 @@
                             подвергается модерации, а личность респондента подтверждается по номеру телефона,
                             что гарантирует выбраковку некорректных ответов`,
                             icon: '/img/icons/woman.svg',
-                            picture: '',
                             id: 3,
-                            num: '',
                         },
                         {
                             text: 'Подбор целевой аудитории',
                             subtext: 'по 70 параметрам выборки и внутренним фильтрам',
                             icon: '/img/icons/work-team.svg',
-                            picture: '',
                             id: 4,
-                            num: '',
                         },
                     ],
                     picture: false,
