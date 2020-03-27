@@ -1,0 +1,67 @@
+
+
+.can-do {
+  margin: 0.5%;
+}
+
+.can-do h6 {
+
+}
+
+.can-do h1 {
+
+}
+
+.can-do .cards {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  @media (max-width: 768px) {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  @media (max-width: 375px) {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+.can-do .card {
+  flex-basis: 31%;
+  height: 220px;
+
+  @media (max-width: 768px) {
+    flex-basis: 48%;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
+}
+
+.can-do .card:last-child {
+  margin-right: 34.5%;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+  @media (max-width: 375px) {
+    margin-right: 0;
+  }
+}
+
+.can-do .card .text {
+  padding-top: 16px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.can-do .background-image {
+  width: 92%;
+  height: 470px;
+  margin: auto;
+  margin-top: -605px;
+}
+
+.can-do i {
+
+}

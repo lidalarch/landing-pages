@@ -1,5 +1,5 @@
 <template>
-    <div class="block-contacts cards">
+    <div class="block-contacts">
 
         <div class="cards">
             <ContactCard :card="card" v-for="card of block.contactCards" :key="card.id" class="contact-card card"/>

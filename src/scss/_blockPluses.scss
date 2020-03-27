@@ -2,6 +2,14 @@
 
 .pluses {
 
+  @media (max-width: 768px) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @media (max-width: 375px) {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 .pluses h6 {

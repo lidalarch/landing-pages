@@ -5,7 +5,9 @@ margin: 0.5%;
 }
 
 .work h6 {
-
+  @media (max-width: 375px) {
+    margin-top: 0;
+  }
 }
 
 .work h1 {
@@ -28,7 +30,7 @@ margin: 0.5%;
   height: 400px;
 
   @media (max-width: 768px) {
-    flex-basis: 45%;
+    flex-basis: 47%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

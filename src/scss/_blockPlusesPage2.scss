@@ -5,7 +5,9 @@
 }
 
 .page2-pluses h6 {
-
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 }
 
 .page2-pluses h1 {
@@ -18,6 +20,7 @@
 
   @media (max-width: 768px) {
     flex-basis: 100%;
+    height: 268px;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -31,29 +34,12 @@
 }
 
 .page2-pluses .card .text {
-  //height: 44px;
   padding-bottom: 8px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
-
-//.page2-pluses .card:first-child {
-//  flex-basis: 48%;
-//
-//  @media (max-width: 768px) {
-//    flex-basis: 100%;
-//  }
-//}
-
-//.page2-pluses .card:nth-child(2) {
-//  flex-basis: 48%;
-//
-//  @media (max-width: 768px) {
-//    flex-basis: 100%;
-//  }
-//}
 
 .page2-pluses .background-image {
 
