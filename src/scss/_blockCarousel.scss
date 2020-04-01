@@ -18,7 +18,7 @@
 .block-carousel h6 {
   height: 10px;
   margin: auto;
-  margin-top: 77px;
+  margin-top: 76px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -31,6 +31,10 @@
   text-transform: uppercase;
 
   color: #686868;
+
+  @media (max-width: 768px) {
+    margin-top: 70px;
+  }
 }
 
 .block-carousel h1 {
@@ -47,6 +51,9 @@
 
   color: #3F3D56;
 
+  @media (max-width: 768px) {
+    margin-top: 8px;
+  }
   @media (max-width: 375px) {
     font-size: 30px;
     line-height: 37px;

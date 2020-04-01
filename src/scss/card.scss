@@ -67,4 +67,8 @@ p {
 
   color: #2B2B2B;
   opacity: 0.1;
+
+  @media (max-width: 768px) {
+    right: 6px;
+  }
 }

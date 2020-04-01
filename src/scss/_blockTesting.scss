@@ -1,7 +1,40 @@
 
+.testing {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
 
 .testing .card {
   min-height: 280px;
+
+  @media (max-width: 768px) {
+    flex-basis: 48%;
+  }
+}
+
+.testing .card .text {
+
+  @media (max-width: 768px) {
+    padding: 39px 12px 32px 32px;
+  }
+}
+
+.testing .card:first-child img {
+  max-width: 100%;
+  padding-right: 17px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.testing .card:nth-child(2) img {
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .testing .card:last-child {
