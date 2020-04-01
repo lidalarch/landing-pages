@@ -1,4 +1,14 @@
 
+.block-carousel.page1-carousel button {
+  margin-top: 70px;
+
+  @media (max-width: 768px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 60px;
+  }
+}
 
 .block-carousel.page1-carousel .carousel {
   height: 367px;
@@ -33,7 +43,7 @@
   left: -123%;
 
   @media (max-width: 768px) {
-    left: -93%;
+    left: -100%;
   }
   @media (max-width: 375px) {
     left: -0%;
@@ -44,7 +54,7 @@
   left: 690%;
 
   @media (max-width: 768px) {
-    left: 660%;
+    left: 668%;
   }
   @media (max-width: 375px) {
     left: 565%;

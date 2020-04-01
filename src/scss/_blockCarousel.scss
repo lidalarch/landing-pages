@@ -116,7 +116,7 @@
   flex-direction: row;
   padding: 0 43px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 100px;
 
   width: 360px;
   height: 40px;
@@ -201,7 +201,7 @@
   background-image: url('../assets/arrow-left.svg');
 
   @media (max-width: 768px) {
-    margin-top: -410px;
+    margin-top: -372px;
     left: -112%;
   }
   @media (max-width: 375px) {
@@ -220,7 +220,7 @@
   background-image: url('../assets/arrow-right.svg');
 
   @media (max-width: 768px) {
-    margin-top: -435px;
+    margin-top: -395px;
     left: 680%;
   }
 
