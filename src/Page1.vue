@@ -7,6 +7,7 @@
         <BlockCarousel :block="blockCarousel"/>
         <BlockDetails :block="blockPluses"/>
         <BlockContacts :block="blockContacts"/>
+        <div class="bg-picture"></div>
     </div>
 </template>
 
@@ -211,7 +212,7 @@
                             id: 5,
                         },
                     ],
-                    picture: true,
+                    picture: false,
                 },
 
                 blockContacts: {
@@ -234,15 +235,15 @@
                                 {
                                     id: 1,
                                     icon: '/img/contacts/photo_small.jpg',
-                                    name:'Василий Жаворонков',
-                                    position:'руководитель социологической cлужбы',
+                                    name: 'Василий Жаворонков',
+                                    position: 'руководитель социологической cлужбы',
                                     mail: 'zhavoronkov@anketolog.ru',
                                 },
                                 {
                                     id: 2,
                                     icon: '/img/contacts/photo_small-1.jpg',
-                                    name:'Наталья Пономаренко',
-                                    position:'менеджер по работе с клиентами',
+                                    name: 'Наталья Пономаренко',
+                                    position: 'менеджер по работе с клиентами',
                                     mail: 'n.ponomarenko@anketolog.ru',
                                 },
                             ],

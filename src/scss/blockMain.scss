@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
 
-  margin-top: -260px;
+  margin-top: -190px;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
@@ -42,9 +42,9 @@
 
 .block-main .card .icon {
   margin-left: 24px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .block-main .card .text {
-  padding: 8px 24px 85px 24px;
+  padding: 8px 20px 85px 24px;
 }

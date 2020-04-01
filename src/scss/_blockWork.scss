@@ -1,7 +1,7 @@
 
 
 .work {
-margin: 0.5%;
+//margin: 0.5%;
 }
 
 .work h6 {
@@ -12,12 +12,13 @@ margin: 0.5%;
 
 .work .cards {
   flex-wrap: nowrap;
-
-  margin-left: 10%;
-  margin-right: 10%;
+  justify-content: space-between;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -26,7 +27,7 @@ margin: 0.5%;
   min-height: 400px;
 
   @media (max-width: 768px) {
-    flex-basis: 47%;
+    flex-basis: 48%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
@@ -58,8 +59,8 @@ margin: 0.5%;
 }
 
 .work .background-image {
-  width: 92%;
+  width: 115%;
   height: 297px;
-  margin: auto;
+  margin-left: -7%;
   margin-top: -230px;
 }

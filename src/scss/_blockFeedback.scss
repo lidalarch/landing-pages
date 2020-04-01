@@ -1,7 +1,12 @@
 
 
 .feedback h1 {
-  margin-top: 100px;
+  margin-top: 77px;
+  margin-bottom: 63px;
+}
+
+.feedback .cards {
+  margin: 0 -15px;
 }
 
 .feedback .card .icon {
@@ -13,16 +18,18 @@
 }
 
 .feedback .card {
-  flex-basis: 20%;
+  flex-basis: 21%;
 
   height: 95px;
-  margin: 2%;
+  margin: 0 15px 54px 15px;
+
+//border: black 1px solid;
 
   box-shadow: none;
   border-radius: 0;
 
   @media (max-width: 768px) {
-    flex-basis: 25%;
+    flex-basis: 29%;
   }
   @media (max-width: 375px) {
     flex-basis: 43%;

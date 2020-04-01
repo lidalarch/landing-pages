@@ -1,24 +1,24 @@
 
 
-.block-carousel {
-  display: block;
-  margin-left: 10%;
-  margin-right: 10%;
-
-  @media (max-width: 768px) {
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-  @media (max-width: 375px) {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-}
+//.block-carousel {
+//  display: block;
+//  margin-left: 10%;
+//  margin-right: 10%;
+//
+//  @media (max-width: 768px) {
+//    margin-left: 1%;
+//    margin-right: 1%;
+//  }
+//  @media (max-width: 375px) {
+//    margin-left: 3%;
+//    margin-right: 3%;
+//  }
+//}
 
 .block-carousel h6 {
   height: 10px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 77px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -34,7 +34,8 @@
 }
 
 .block-carousel h1 {
-  margin-bottom: 32px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -108,7 +109,7 @@
   flex-direction: row;
   padding: 0 43px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 70px;
 
   width: 360px;
   height: 40px;
@@ -150,6 +151,10 @@
   margin: 10px 0;
 }
 
+.block-carousel .carousel {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
 .block-carousel .carousel-indicators {
   bottom: -115px;
 
@@ -183,13 +188,13 @@
   position: relative;
   width: 40px;
   height: 40px;
-  margin-top: -400px;
+  margin-top: -410px;
   left: -180%;
 
   background-image: url('../assets/arrow-left.svg');
 
   @media (max-width: 768px) {
-    margin-top: -400px;
+    margin-top: -410px;
     left: -112%;
   }
   @media (max-width: 375px) {
@@ -202,13 +207,13 @@
   position: relative;
   width: 40px;
   height: 40px;
-  margin-top: -420px;
+  margin-top: -435px;
   left: 750%;
 
   background-image: url('../assets/arrow-right.svg');
 
   @media (max-width: 768px) {
-    margin-top: -420px;
+    margin-top: -435px;
     left: 680%;
   }
 
@@ -231,5 +236,18 @@
 
   @media (max-width: 375px) {
     border-radius: 10px;
+  }
+}
+
+.block-carousel .item-prev .carousel-item {
+  height: 373px;
+  max-width: 597px;
+  margin-left: -530px;
+  margin-top: 101px;
+
+  //border: black 1px solid;
+
+  @media (max-width: 768px) {
+    visibility: hidden;
   }
 }

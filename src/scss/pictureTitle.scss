@@ -2,18 +2,25 @@
 
 .picture-title {
   display: block;
-  min-height: 1087px;
+  min-height: 720px;
+
+  //position: absolute;
+  //width: 1440px;
+  //min-height: 718.38px;
+  //left: 240px;
+  //top: 0px;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(
   "../assets/delight-ice-coffee-box-2813280.jpeg");
   background-size: cover;
-  background-position: center 0;
+  background-position: center -176px;
 }
 
 .picture-title h1 {
   position: relative;
-  top: 400px;
+  top: 227px;
   margin: auto;
+  max-width: 1008px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -38,7 +45,7 @@
 
   position: relative;
   width: 230px;
-  top: 440px;
+  top: 264px;
 
   background: #EF4744;
 

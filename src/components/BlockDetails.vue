@@ -1,5 +1,5 @@
 <template>
-    <div :class="'block-details ' + block.class">
+    <div :class="'container-md block-details ' + block.class">
 
         <h6 v-if="block.subtitle"><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
         <h1>{{ block.title }}</h1>

@@ -1,13 +1,29 @@
 
 
-.pluses {
+//.pluses {
+//  @media (max-width: 768px) {
+//    margin-left: 10%;
+//    margin-right: 10%;
+//  }
+//  @media (max-width: 375px) {
+//    margin-left: 3%;
+//    margin-right: 3%;
+//  }
+//}
+
+.pluses h6 {
+  margin-top: 168px;
+}
+
+.pluses h1 {
+  margin-top: 7px;
+}
+
+.pluses .cards {
+  justify-content: space-between;
+
   @media (max-width: 768px) {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  @media (max-width: 375px) {
-    margin-left: 3%;
-    margin-right: 3%;
+    justify-content: space-evenly;
   }
 }
 
@@ -16,29 +32,31 @@
   border-radius: 0;
 
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    flex-basis: 80%;
   }
 }
 
 .pluses .card .text {
+  padding: 11px 32px 32px 32px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
 
 .pluses .card:first-child {
-  flex-basis: 48%;
+  flex-basis: 48.5%;
 
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    flex-basis: 80%;
   }
 }
 
 .pluses .card:nth-child(2) {
-  flex-basis: 48%;
+  flex-basis: 48.5%;
 
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    flex-basis: 80%;
   }
 }
 

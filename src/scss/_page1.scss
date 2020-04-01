@@ -12,6 +12,27 @@
   margin: 0;
 }
 
-#page1 .block-contacts .cards {
-  margin-top: -670px;
+#page1 .block-contacts {
+  z-index: 2;
+}
+
+.bg-picture {
+
+  width: 45%;
+  height: 1301px;
+  margin-left: 718px;
+  margin-top: -1255px;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/adult-business-deal-colleague-1265902.jpeg');
+  background-size: cover;
+  background-position: center center;
+
+  //border: 0.5px solid #E5E5E5;
+  box-sizing: border-box;
+
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    visibility: hidden;
+  }
 }

@@ -1,11 +1,11 @@
 
 
 .testing .card {
- min-height: 280px;
+  min-height: 280px;
 }
 
 .testing .card:last-child {
-  flex-basis: 48%;
+  flex-basis: 48.5%;
   min-height: 310px;
 
   @media (max-width: 768px) {
@@ -19,6 +19,9 @@
 .testing .card:nth-last-child(2) {
   flex-basis: 48%;
 
+  @media (max-width: 768px) {
+    flex-basis: 48%;
+  }
   @media (max-width: 375px) {
     flex-basis: 100%;
   }
