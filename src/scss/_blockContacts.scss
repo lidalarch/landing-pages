@@ -57,6 +57,9 @@
     margin-bottom: 32px;
     padding: 46px 118px 0 48px;
   }
+  @media (max-width: 550px) {
+    padding: 48px 10px 0 3px;
+  }
   @media (max-width: 375px) {
     flex-basis: 100%;
     padding: 48px 10px 0 3px;
@@ -71,6 +74,9 @@
     flex-basis: 80%;
     margin-left: 0;
     padding: 46px 100px 0 48px;
+  }
+  @media (max-width: 550px) {
+    padding: 48px 10px 0 3px;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

@@ -63,6 +63,10 @@
   box-shadow: none;
   border-radius: 0;
 
+  @media (min-width: 769px) and (max-width: 991px) {
+    flex-basis: 21%;
+    margin: 0 15px 54px 15px;
+  }
   @media (min-width: 713px) and (max-width: 768px) {
     flex-basis: 29.5%;
     margin: 0 15px 30px 15px;
