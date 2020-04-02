@@ -12,6 +12,14 @@
   @media (max-width: 768px) {
     background-position: center -3px;
   }
+  @media (max-width: 609px) {
+    background-position: center -3px;
+  }
+  @media (max-width: 375px) {
+    min-height: 697px;
+    background-size: 148%;
+    background-position: -160px -4px;
+  }
 }
 
 .picture-title h1 {
@@ -33,7 +41,12 @@
   @media (max-width: 768px) {
     top: 302px;
   }
+  @media (max-width: 609px) {
+    top: 217px;
+    font-size: 44px;
+  }
   @media (max-width: 375px) {
+    top: 217px;
     font-size: 44px;
   }
 }
@@ -41,7 +54,7 @@
 .picture-title button {
   display: flex;
   flex-direction: row;
-  padding: 0 43px;
+  padding: 0;
   margin: auto;
 
   position: relative;
@@ -53,14 +66,16 @@
   @media (max-width: 768px) {
     top: 320px;
   }
+  @media (max-width: 609px) {
+    top: 235px;
+  }
+  @media (max-width: 375px) {
+    width: 350px;
+    top: 235px;
+  }
 }
 
 .picture-title a {
-  position: static;
-  left: 18.7%;
-  right: 18.7%;
-  top: 27.5%;
-  bottom: 27.5%;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -76,6 +91,6 @@
   flex: none;
   order: 0;
   align-self: center;
-  margin: 10px 0;
+  margin: 10px auto;
 
 }

@@ -6,7 +6,7 @@
     margin-top: 70px;
   }
   @media (max-width: 375px) {
-    margin-top: 60px;
+    margin-top: 85px;
   }
 }
 
@@ -19,13 +19,25 @@
     margin-top: 5px;
   }
   @media (max-width: 375px) {
+    margin-top: 0;
+    margin-left: -12px;
     height: 232px;
-    max-width: 440px;
+    max-width: 400px;
+  }
+}
+
+.block-carousel.page1-carousel .carousel-inner {
+  @media (max-width: 375px) {
+    width: 106%;
   }
 }
 
 .block-carousel.page1-carousel .carousel-inner .carousel-item img {
   border-radius: 0;
+
+  @media (max-width: 375px) {
+    height: 232px;
+  }
 }
 
 .block-carousel.page1-carousel .carousel-indicators {
@@ -35,7 +47,7 @@
     bottom: -70px;
   }
   @media (max-width: 375px) {
-    bottom: -32px;
+    bottom: -85px;
   }
 }
 
@@ -46,7 +58,7 @@
     left: -100%;
   }
   @media (max-width: 375px) {
-    left: -0%;
+    left: 100%;
   }
 }
 
@@ -57,7 +69,7 @@
     left: 668%;
   }
   @media (max-width: 375px) {
-    left: 565%;
+    left: 518%;
   }
 }
 

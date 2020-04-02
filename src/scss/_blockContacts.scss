@@ -10,6 +10,8 @@
 //    margin-right: 10%;
 //  }
 //  @media (max-width: 375px) {
+//    padding-right: 10px;
+//    padding-left: 10px;
 //    margin-left: 3%;
 //    margin-right: 3%;
 //  }
@@ -29,6 +31,10 @@
     margin-left: 8px;
     margin-right: 8px;
   }
+  @media (max-width: 375px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .block-contacts .contact-card {
@@ -36,7 +42,7 @@
 
   height: auto;
   //margin: 0;
-  padding: 46px 30px 0 48px;
+  padding: 46px 25px 0 48px;
 
   background: #FFFFFF;
 
@@ -48,9 +54,12 @@
 
   @media (max-width: 768px) {
     flex-basis: 80%;
+    margin-bottom: 32px;
+    padding: 46px 118px 0 48px;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
+    padding: 48px 10px 0 3px;
   }
 }
 
@@ -61,15 +70,31 @@
   @media (max-width: 768px) {
     flex-basis: 80%;
     margin-left: 0;
+    padding: 46px 100px 0 48px;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
     margin-left: 0;
+    padding: 48px 10px 0 3px;
   }
 }
 
 .block-contacts .contact-card:nth-child(2n) .number {
   margin-top: 0;
+}
+
+.block-contacts .contact-card:nth-child(2n) button {
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 102px;
+  }
+  @media (max-width: 375px) {
+    padding: 20px 0px 11px 0px;
+    margin-bottom: 125px;
+
+    line-height: 14px;
+  }
 }
 
 .block-contacts .picture {
@@ -84,4 +109,13 @@
   background: url('../assets/pencil.png');
   background-size: cover;
   background-position: center 0;
+
+  @media (max-width: 768px) {
+    margin-top: 19px;
+  }
+  @media (max-width: 375px) {
+    max-width: 276px;
+    min-height: 44px;
+    margin-top: -12px;
+  }
 }

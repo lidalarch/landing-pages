@@ -8,13 +8,39 @@
     margin-top: 70px;
     margin-bottom: 56px;
   }
+  @media (max-width: 375px) {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
 }
 
 .feedback .cards {
   margin: 0 -15px;
 
-  @media (max-width: 768px) {
+  //@media (max-width: 768px) {
+  //  margin: 0 -50px;
+  //}
+  //@media (max-width: 375px) {
+  //  margin: 0 -15px;
+  //}
+
+  @media (min-width: 713px) and (max-width: 768px) {
     margin: 0 -50px;
+  }
+  @media (max-width: 712px) {
+    margin: 0 -30px;
+  }
+  @media (max-width: 550px) {
+    margin: 0 -20px;
+  }
+  @media (max-width: 444px) {
+    margin: 0 -20px;
+  }
+  @media (max-width: 375px) {
+    margin: 0 -15px;
+  }
+  @media (max-width: 374px) {
+    margin: 0 -15px;
   }
 }
 
@@ -37,11 +63,26 @@
   box-shadow: none;
   border-radius: 0;
 
-  @media (max-width: 768px) {
+  @media (min-width: 713px) and (max-width: 768px) {
     flex-basis: 29.5%;
     margin: 0 15px 30px 15px;
   }
+  @media (max-width: 712px) {
+    flex-basis: 27.5%;
+    margin: 0 15px 30px 15px;
+  }
+  @media (max-width: 550px) {
+    flex-basis: 26.5%;
+    margin: 0 15px 30px 15px;
+  }
+  @media (max-width: 444px) {
+    flex-basis: 25.5%;
+    margin: 0 15px 30px 15px;
+  }
   @media (max-width: 375px) {
-    flex-basis: 43%;
+    flex-basis: 42%;
+  }
+  @media (max-width: 374px) {
+    flex-basis: 41%;
   }
 }

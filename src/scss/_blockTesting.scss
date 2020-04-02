@@ -1,7 +1,24 @@
 
+
 .testing {
   @media (max-width: 768px) {
     padding: 0;
+  }
+  @media (max-width: 375px) {
+    padding: 0 15px;
+  }
+}
+
+.testing h6 {
+  @media (max-width: 375px) {
+    margin-top: 80px;
+  }
+}
+
+.testing h1 {
+  @media (max-width: 375px) {
+    margin-top: 6px;
+    margin-bottom: 26px;
   }
 }
 
@@ -11,6 +28,9 @@
   @media (max-width: 768px) {
     flex-basis: 48%;
   }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+  }
 }
 
 .testing .card .text {
@@ -18,23 +38,23 @@
   @media (max-width: 768px) {
     padding: 39px 12px 32px 32px;
   }
+  @media (max-width: 375px) {
+    padding: 39px 12px 32px 32px;
+  }
 }
 
 .testing .card:first-child img {
-  max-width: 100%;
+  width: 72%;
   padding-right: 17px;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
 }
 
 .testing .card:nth-child(2) img {
   max-width: 100%;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
+  //@media (max-width: 768px) {
+  //  max-width: 100%;
+  //}
 }
 
 .testing .card:last-child {
@@ -45,7 +65,18 @@
     flex-basis: 100%;
   }
   @media (max-width: 375px) {
+    min-height: 370px;
     flex-basis: 100%;
+  }
+}
+
+.testing .card:last-child img {
+  width: 72%;
+  padding-right: 17px;
+
+  @media (max-width: 375px) {
+    width: 82%;
+    padding-right: 0;
   }
 }
 
@@ -56,6 +87,13 @@
     flex-basis: 48%;
   }
   @media (max-width: 375px) {
+    min-height: 368px;
     flex-basis: 100%;
+  }
+}
+
+.testing .card:nth-last-child(2) img {
+  @media (max-width: 375px) {
+    width: 82%;
   }
 }

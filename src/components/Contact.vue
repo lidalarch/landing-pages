@@ -1,13 +1,13 @@
 <template>
     <div :id="'contact-' + contact.id">
-        <div class="col-sm-2">
+        <div class="col-sm-3">
 
             <div v-if="contact.icon" class="icon">
                 <img :src="contact.icon" alt="icon"/>
             </div>
 
         </div>
-        <div class="col-sm-10">
+        <div class="col-sm-9">
 
             <h5 class="name">{{ contact.name }}</h5>
 

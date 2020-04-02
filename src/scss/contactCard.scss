@@ -10,6 +10,10 @@
   line-height: 29px;
 
   color: #3F3D56;
+
+  @media (max-width: 375px) {
+    padding: 0px 0px 0 18px;
+  }
 }
 
 .contact-card p {
@@ -22,24 +26,49 @@
   line-height: 25px;
 
   color: #2B2B2B;
+
+  @media (max-width: 375px) {
+    padding: 1px 0px 0 19px;
+  }
 }
 
 .contact-card .contact {
   padding-top: 22px;
   padding-bottom: 16px;
+
+  @media (max-width: 375px) {
+    padding-left: 17px;
+  }
 }
 
 .contact-card .contact p {
   line-height: 10px;
+
+  @media (max-width: 375px) {
+    padding-left: 0;
+  }
 }
 
-.contact-card .contact .col-sm-10 {
+.contact-card .contact .col-sm-9 {
+  margin-left: -8%;
   padding-left: 0;
+
+  @media (max-width: 993px) {
+    margin-left: 0;
+  }
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+  @media (max-width: 375px) {
+    padding-left: 102px;
+    margin-top: -58px;
+    margin-bottom: -12px;
+  }
 }
 
 .contact-card button {
   max-width: 380px;
-  min-height: 40px;
+  min-height: 41px;
   margin-top: 23px;
   margin-bottom: 45px;
 
@@ -50,6 +79,16 @@
   border-radius: 0;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    margin-bottom: 156px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0px 0px 0 0px;
+    margin-top: 11px;
+    margin-bottom: 124px;
+  }
 }
 
 .contact-card button a {
