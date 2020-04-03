@@ -1,22 +1,5 @@
 
 
-//.block-contacts {
-//  display: block;
-//  margin-left: 10%;
-//  margin-right: 10%;
-//
-//  @media (max-width: 768px) {
-//    margin-left: 10%;
-//    margin-right: 10%;
-//  }
-//  @media (max-width: 375px) {
-//    padding-right: 10px;
-//    padding-left: 10px;
-//    margin-left: 3%;
-//    margin-right: 3%;
-//  }
-//}
-
 .block-contacts .cards {
   display: flex;
   flex-direction: row;
@@ -41,7 +24,6 @@
   flex-basis: 40%;
 
   height: auto;
-  //margin: 0;
   padding: 46px 25px 0 48px;
 
   background: #FFFFFF;
@@ -64,6 +46,17 @@
     flex-basis: 100%;
     padding: 48px 10px 0 3px;
   }
+}
+
+.block-contacts .contact-card button:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.block-contacts .contact-card button:hover a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .block-contacts .contact-card:nth-child(2n) {
@@ -101,6 +94,17 @@
 
     line-height: 14px;
   }
+}
+
+.block-contacts .contact-card:nth-child(2n) button:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.block-contacts .contact-card:nth-child(2n) button:hover a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .block-contacts .picture {

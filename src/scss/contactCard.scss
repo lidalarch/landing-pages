@@ -76,7 +76,7 @@
 
   border: 0.5px solid #EF4744;
   box-sizing: border-box;
-  border-radius: 0;
+  border-radius: 2px;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 
@@ -102,4 +102,15 @@
   text-transform: uppercase;
 
   color: #2B2B2B;
+}
+
+.contact-card button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-card  .btn-danger:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
 }
