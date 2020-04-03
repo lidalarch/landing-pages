@@ -12,13 +12,134 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(
   "../assets/woman-standing-beside-pineapple-fruits-2292919.jpeg");
   background-size: cover;
-  background-position: center 0;
+  background-position: center -174px;
+
+  @media (max-width: 768px) {
+    background-position: center -145px;
+  }
+
+  //@media (max-width: 609px) {
+  //  background-position: center -3px;
+  //}
+  @media (max-width: 375px) {
+    min-height: 697px;
+    background-size: 220%;
+    background-position: -312px 0px;
+  }
+}
+
+#page2 .picture-title h1 {
+  top: 184px;
+  max-width: 1077px;
+
+  @media (max-width: 768px) {
+    top: 248px;
+  }
+  @media (max-width: 609px) {
+    top: 248px;
+    //font-size: 44px;
+  }
+  @media (max-width: 375px) {
+    top: 216px;
+    font-size: 44px;
+  }
+}
+
+#page2 .picture-title button {
+  top: 219px;
+
+  @media (max-width: 768px) {
+    top: 265px;
+  }
+  @media (max-width: 609px) {
+    top: 265px;
+  }
+  @media (max-width: 375px) {
+    width: 350px;
+    top: 236px;
+  }
+}
+
+#page2 .block-main.cards {
+  margin-top: -199px;
+
+  @media (max-width: 768px) {
+    margin-top: -145px;
+  }
+  @media (max-width: 609px) {
+    margin-top: -145px;
+  }
+  @media (max-width: 375px) {
+    margin-top: -146px;
+  }
+}
+
+#page2  .block-main .card .text {
+  @media (max-width: 375px) {
+    padding: 8px 46px 85px 24px;
+  }
 }
 
 #page2 .block-contacts {
-  margin-top: 660px;
+  margin-top: -2px;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
-#page2 .block-contacts .cards {
-  margin-top: -670px;
+#page2 .block-contacts .contact-card{
+
+  @media (max-width: 768px) {
+    padding: 46px 124px 0 48px;
+  }
+  @media (max-width: 375px) {
+    padding: 47px 10px 0 3px;
+  }
+}
+
+#page2 .block-contacts .contact-card:nth-child(2n) {
+
+  @media (max-width: 768px) {
+    padding: 46px 100px 0 53px;
+  }
+  @media (max-width: 375px) {
+    padding: 47px 10px 0 3px;
+  }
+}
+
+#page2 .contact-card .contact .col-sm-9 {
+
+   @media (max-width: 768px) {
+     margin-left: -3px;
+   }
+  @media (max-width: 375px) {
+    margin-left: -1px;
+    margin-top: -62px;
+  }
+ }
+
+#page2 .block-contacts .picture {
+  margin-top: 46px;
+
+  @media (max-width: 768px) {
+    margin-top: 15px;
+  }
+  @media (max-width: 375px) {
+    margin-top: -10px;
+  }
+}
+
+#page2 .contact .icon {
+  @media (max-width: 375px) {
+    margin: 0px 0 5px 0px;
+  }
+}
+
+#page2 .block-contacts .contact-card:nth-child(2n) button {
+  @media (max-width: 375px) {
+    padding: 20px 0px 11px 0px;
+    margin-bottom: 125px;
+    margin-top: 2px;
+  }
 }

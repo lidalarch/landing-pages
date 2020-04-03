@@ -20,7 +20,7 @@
 
   width: 45%;
   height: 1301px;
-  margin-left: 717px;
+  margin-left: 50%;
   margin-top: -1231px;
 
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/adult-business-deal-colleague-1265902.jpeg');
@@ -32,6 +32,9 @@
 
   z-index: 1;
 
+  @media (max-width: 991px) {
+    margin-top: -1305px;
+  }
   @media (max-width: 768px) {
     visibility: hidden;
   }

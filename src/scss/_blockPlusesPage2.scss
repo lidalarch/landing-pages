@@ -8,32 +8,82 @@
 }
 
 .page2-pluses h6 {
+  margin-left: 22px;
+  margin-top: 99px;
+
   @media (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 9px;
+    margin-left: -17px;
+  }
+}
+
+.page2-pluses h1 {
+
+  @media (max-width: 768px) {
+    margin-top: 11px;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 9px;
+    margin-left: -9px;
+    margin-bottom: 23px;
   }
 }
 
 .page2-pluses .card {
-  flex-basis: 48%;
+  flex-basis: 48.5%;
   height: auto;
+ // border: black 1px solid;
 
   @media (max-width: 768px) {
     flex-basis: 80%;
-    //margin-left: 10%;
-    //margin-right: 10%;
+    min-height: 268px;
   }
-
   @media (max-width: 375px) {
     flex-basis: 100%;
-    //margin-left: 3%;
-    //margin-right: 3%;
+    min-height: 268px;
+  }
+}
+
+.page2-pluses .card .icon {
+
+  @media (max-width: 768px) {
+    margin-left: 37px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 33px;
+    margin-left: 28px;
   }
 }
 
 .page2-pluses .card .text {
-  padding-bottom: 8px;
+  padding-top: 14px;
+  padding-bottom: 6px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+
+  @media (max-width: 768px) {
+    padding: 15px 12px 6px 36px;
+  }
+  @media (max-width: 375px) {
+    padding: 15px 12px 6px 30px;
+  }
+}
+
+.page2-pluses .card .subtext {
+  margin-bottom: 14px;
+
+  @media (max-width: 768px) {
+    padding: 8px 10px 32px 37px;
+    //margin-bottom: 33px;
+  }
+  @media (max-width: 375px) {
+    padding: 8px 10px 20px 30px;
+    margin-bottom: 0;
+  }
 }

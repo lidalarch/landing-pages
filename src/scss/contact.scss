@@ -2,8 +2,16 @@
 
 .contact .icon {
   padding: 0;
-  margin: 0;
+  //margin: 0;
+  margin: -4px 0 5px -2px;
   text-align: left;
+
+  @media (max-width: 768px) {
+    //margin: -5px 0 5px 5px;
+  }
+  @media (max-width: 375px) {
+    margin: -4px 0 5px -2px;
+  }
 }
 
 .contact .icon img {

@@ -53,7 +53,7 @@
 .pluses .card {
   min-height: 218px;
   border-radius: 0;
-  //border: black 1px solid;
+
   @media (max-width: 768px) {
     flex-basis: 80%;
   }
@@ -65,6 +65,7 @@
 }
 
 .pluses .card .icon {
+
   @media (max-width: 768px) {
     margin-top: 29px;
   }
