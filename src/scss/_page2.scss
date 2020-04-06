@@ -17,10 +17,6 @@
   @media (max-width: 768px) {
     background-position: center -145px;
   }
-
-  //@media (max-width: 609px) {
-  //  background-position: center -3px;
-  //}
   @media (max-width: 375px) {
     min-height: 697px;
     background-size: 220%;
@@ -35,9 +31,8 @@
   @media (max-width: 768px) {
     top: 248px;
   }
-  @media (max-width: 609px) {
-    top: 248px;
-    //font-size: 44px;
+  @media (max-width: 697px) {
+    top: 216px;
   }
   @media (max-width: 375px) {
     top: 216px;
@@ -51,8 +46,8 @@
   @media (max-width: 768px) {
     top: 265px;
   }
-  @media (max-width: 609px) {
-    top: 265px;
+  @media (max-width: 697px) {
+    top: 236px;
   }
   @media (max-width: 375px) {
     width: 350px;
@@ -66,15 +61,13 @@
   @media (max-width: 768px) {
     margin-top: -145px;
   }
-  @media (max-width: 609px) {
-    margin-top: -145px;
-  }
   @media (max-width: 375px) {
     margin-top: -146px;
   }
 }
 
-#page2  .block-main .card .text {
+#page2 .block-main .card .text {
+
   @media (max-width: 375px) {
     padding: 8px 46px 85px 24px;
   }
@@ -131,12 +124,26 @@
 }
 
 #page2 .contact .icon {
+
   @media (max-width: 375px) {
     margin: 0px 0 5px 0px;
   }
 }
+#page2 .block-contacts .contact-card button {
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 10px;
+  }
+}
 
 #page2 .block-contacts .contact-card:nth-child(2n) button {
+
+  @media (max-width: 768px) {
+    margin-bottom: 104px;
+  }
   @media (max-width: 375px) {
     padding: 20px 0px 11px 0px;
     margin-bottom: 125px;

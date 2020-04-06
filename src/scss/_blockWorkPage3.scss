@@ -1,32 +1,49 @@
 
 
-.page3-work {
-  margin-top: 190px;
+.page3-work h6 {
+  margin-left: 0px;
+  margin-top: 196px;
+
+  @media (max-width: 768px) {
+    margin-top: 198px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 177px;
+  }
+}
+
+.page3-work h1 {
+  margin-bottom: 58px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
+  }
 }
 
 .page3-work .cards {
-  margin-left: 10%;
-  margin-right: 10%;
+  //margin-left: 10%;
+  //margin-right: 10%;
 
   @media (max-width: 768px) {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: -20px;
+    margin-right: -20px;
   }
   @media (max-width: 375px) {
-    margin-left: 3%;
-    margin-right: 3%;
+    justify-content: space-evenly;
+    //margin-left: 3%;
+    //margin-right: 3%;
   }
 }
 
 .page3-work .card {
-  flex-basis: 31%;
+  flex-basis: 31.5%;
   min-height: 450px;
 
   @media (max-width: 768px) {
     flex-basis: 48%;
   }
   @media (max-width: 375px) {
-    flex-basis: 100%;
+    flex-basis: 91%;
   }
 }
 
@@ -37,8 +54,18 @@
 }
 
 .page3-work .card .subtext {
-  margin-top: 80px;
+  margin-top: 83px;
   margin-bottom: 165px;
+  padding: 8px 10px 32px 32px;
 
   line-height: 26px;
+}
+
+.page3-work .card .picture img {
+  width: 80%;
+  max-height: 150px;
+}
+
+.page3-work .background-image {
+  margin-top: -251px;
 }
