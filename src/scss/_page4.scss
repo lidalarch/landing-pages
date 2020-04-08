@@ -12,9 +12,118 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(
   "../assets/barcode-boutique-brand-1243362.jpeg");
   background-size: cover;
-  background-position: center 0;
+  background-position: center -212px;
+
+  @media (max-width: 1033px) {
+    background-position: center 22px;
+  }
+  @media (max-width: 768px) {
+    background-position: center 22px;
+  }
+  @media (max-width: 383px) {
+    background-size: 304%;
+    background-position: -229px -194px;
+  }
+  @media (max-width: 375px) {
+    background-size: 304%;
+    background-position: -229px -194px;
+  }
 }
 
-#page4 .block-contacts .cards {
-  margin-top: -15px;
+#page4 .picture-title h1 {
+  top: 248px;
+  max-width: 1065px;
+
+  @media (max-width: 768px) {
+    top: 373px;
+    line-height: 46px;
+  }
+  @media (max-width: 678px) {
+    top: 317px;
+    font-size: 55px;
+  }
+  @media (max-width: 444px) {
+    top: 291px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+  @media (max-width: 375px) {
+    top: 291px;
+    font-size: 44px;
+    line-height: 44px;
+  }
+}
+
+#page4 .picture-title button {
+  top: 272px;
+
+  @media (max-width: 768px) {
+    top: 393px;
+  }
+  @media (max-width: 678px) {
+    top: 345px;
+  }
+  @media (max-width: 444px) {
+    top: 321px;
+  }
+  @media (max-width: 375px) {
+    width: 350px;
+    top: 321px;
+  }
+}
+
+#page4 .block-contacts .contact-card {
+
+  @media (max-width: 768px) {
+    flex-basis: 78.5%;
+  }
+  @media (max-width: 550px) {
+    padding: 46px 34px 0 48px;
+  }
+  @media (max-width: 375px) {
+    flex-basis: 100%;
+    margin-bottom: 29px;
+  }
+}
+
+#page4 .contact-card .contact .col-sm-9 {
+
+  @media (max-width: 768px) {
+    margin-left: -5px;
+  }
+  @media (max-width: 375px) {
+    margin-left: 0;
+    margin-top: -57px;
+  }
+}
+
+#page4 .contact .icon {
+
+  @media (max-width: 375px) {
+    margin: 2px 0px -1px 0px;
+  }
+}
+
+#page4 .block-contacts .contact-card button {
+  margin-top: 27px;
+
+  @media (max-width: 375px) {
+    margin-top: 15px;
+  }
+}
+
+#page4 .block-contacts .contact-card:nth-child(2n) button {
+  margin-top: 21px;
+
+  @media (max-width: 375px) {
+    margin: 11px 11px 127px 17px;
+  }
+}
+
+#page4 .block-contacts .picture {
+  margin-top: 16px;
+
+  @media (max-width: 375px) {
+    margin-top: -10px;
+  }
 }
