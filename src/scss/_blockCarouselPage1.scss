@@ -48,6 +48,10 @@
   @media (max-width: 768px) {
     margin-top: 5px;
   }
+  @media (max-width: 655px) {
+    height: 232px;
+    max-width: 400px;
+  }
   @media (max-width: 375px) {
     margin-top: 0;
     margin-left: -12px;
@@ -57,6 +61,7 @@
 }
 
 .block-carousel.page1-carousel .carousel-inner {
+
   @media (max-width: 375px) {
     width: 106%;
   }
@@ -86,6 +91,9 @@
     margin-top: -372px;
     left: -100%;
   }
+  @media (max-width: 655px) {
+    margin-top: -250px;
+  }
   @media (max-width: 375px) {
     margin-top: 20px;
     left: 100%;
@@ -99,6 +107,9 @@
   @media (max-width: 768px) {
     margin-top: -395px;
     left: 668%;
+  }
+  @media (max-width: 655px) {
+    margin-top: -275px;
   }
   @media (max-width: 375px) {
     margin-top: -56px;

@@ -34,6 +34,9 @@
   top: 248px;
   max-width: 1065px;
 
+  @media (max-width: 991px) {
+    max-width: 926px;
+  }
   @media (max-width: 768px) {
     top: 373px;
     line-height: 46px;
