@@ -16,6 +16,27 @@
   z-index: 2;
 }
 
+#page1 .contact-card button {
+
+  @media (max-width: 375px) {
+    margin-top: 13px;
+    margin-bottom: 125px;
+  }
+}
+
+#page1 .block-contacts .contact-card:nth-child(2n) button {
+
+  @media (max-width: 375px) {
+    margin-top: 11px;
+    margin-left: 16px;
+    margin-right: 10px;
+    line-height: 18px;
+  }
+  @media (max-width: 368px) {
+    margin-top: 25px;
+  }
+}
+
 .bg-picture {
 
   width: 45%;

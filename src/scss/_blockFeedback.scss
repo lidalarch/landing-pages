@@ -17,13 +17,6 @@
 .feedback .cards {
   margin: 0 -15px;
 
-  //@media (max-width: 768px) {
-  //  margin: 0 -50px;
-  //}
-  //@media (max-width: 375px) {
-  //  margin: 0 -15px;
-  //}
-
   @media (min-width: 713px) and (max-width: 768px) {
     margin: 0 -50px;
   }
@@ -40,7 +33,12 @@
     margin: 0 -15px;
   }
   @media (max-width: 374px) {
+    justify-content: space-between;
     margin: 0 -15px;
+  }
+  @media (max-width: 333px) {
+    justify-content: center;
+    margin: 0 20px;
   }
 }
 
@@ -88,5 +86,8 @@
   }
   @media (max-width: 374px) {
     flex-basis: 41%;
+  }
+  @media (max-width: 333px) {
+    flex-basis: 100%;
   }
 }

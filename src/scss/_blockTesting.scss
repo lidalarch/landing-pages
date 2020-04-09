@@ -1,6 +1,7 @@
 
 
 .testing {
+
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -10,15 +11,18 @@
 }
 
 .testing h6 {
+
   @media (max-width: 375px) {
     margin-top: 80px;
   }
 }
 
 .testing h1 {
+
   @media (max-width: 375px) {
     margin-top: 6px;
     margin-bottom: 26px;
+    margin-left: -8px;
   }
 }
 
@@ -46,7 +50,6 @@
 .testing .card:first-child img {
   width: 72%;
   padding-right: 17px;
-
 }
 
 .testing .card:nth-child(2) img {
@@ -93,6 +96,7 @@
 }
 
 .testing .card:nth-last-child(2) img {
+
   @media (max-width: 375px) {
     width: 82%;
   }

@@ -83,6 +83,8 @@
   margin: auto;
   margin-top: 70px;
 
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
   z-index: 2;
 
   @media (max-width: 655px) {
@@ -110,14 +112,35 @@
   z-index: 1;
 
   background: url('../assets/MacBook-Pro-mockup_background.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
 
   box-sizing: border-box;
 
+  @media (max-width: 991px) {
+    height: 468px;
+    width: 115%;
+    margin-top: -398px;
+    margin-left: -49px;
+  }
+  @media (max-width: 767px) {
+    margin-left: -4%;
+  }
+  @media (max-width: 753px) {
+    width: 129%;
+    margin-left: -5%;
+  }
+  @media (max-width: 740px) {
+    margin-left: -6.5%;
+  }
+  @media (max-width: 710px) {
+    width: 129%;
+    margin-left: -8%;
+  }
   @media (max-width: 655px) {
-    height: 362px;
-    margin-top: -268px;
+    height: 324px;
+    width: 85%;
+    margin-top: -253px;
   }
   @media (max-width: 514px) {
     visibility: hidden;
@@ -179,10 +202,6 @@
   text-decoration: none;
 }
 
-.block-carousel .carousel {
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-}
-
 .block-carousel .carousel-indicators {
   bottom: -134px;
 
@@ -224,6 +243,10 @@
 
   background-image: url('../assets/arrow-left.svg');
 
+  @media (max-width: 917px) {
+    margin-top: -383px;
+    left: -127%;
+  }
   @media (max-width: 768px) {
     margin-top: -380px;
     left: -120%;
@@ -251,6 +274,9 @@
 
   background-image: url('../assets/arrow-right.svg');
 
+  @media (max-width: 917px) {
+    left: 695%;
+  }
   @media (max-width: 768px) {
     margin-top: -398px;
     left: 689%;

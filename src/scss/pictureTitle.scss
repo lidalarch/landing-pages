@@ -12,13 +12,18 @@
   @media (max-width: 768px) {
     background-position: center -3px;
   }
-  @media (max-width: 609px) {
-    background-position: center -3px;
-  }
   @media (max-width: 375px) {
     min-height: 697px;
     background-size: 148%;
-    background-position: -160px -4px;
+    background-position: 88% -0.5%;
+  }
+  @media (max-width: 371px) {
+    background-size: 175%;
+    background-position: 60% 0;
+  }
+  @media (max-width: 313px) {
+    background-size: 223%;
+    background-position: 60% 0;
   }
 }
 
@@ -70,7 +75,7 @@
     top: 235px;
   }
   @media (max-width: 375px) {
-    width: 350px;
+    width: 93%;
     top: 235px;
   }
 }

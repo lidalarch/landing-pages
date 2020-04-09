@@ -7,7 +7,7 @@
 
         <div class="item-prev"></div>
 
-        <div id="carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <div id="carousel" ref="carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
             <ol class="carousel-indicators">
                 <li :class="{active: slide.isActive}"
@@ -80,36 +80,62 @@
             // }
             //});
             //$(document).ready(function () {
-            //     $("#carousel").on('slid.bs.carousel', function () {
-            //         $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-            //     });
+            //      $("#carousel").on('slid.bs.carousel', function () {
+            //          $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
+            //      });
            // });
 
-            // $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-            //
-            let observer = new MutationObserver(function (mutations) {
-                mutations.forEach(function (mutation) {
-                    let newVal = $(mutation.target).prop(mutation.attributeName);
-                    if (mutation.attributeName === "class") {
-                        if (newVal === 'active') {
-                            $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-                        }
-                    }
-                });
-            });
-            let parentDOM = document.getElementById('carousel-inner');
 
-            let items = parentDOM.getElementsByClassName('.carousel-item');
-            for (let item of items) {
-             observer.observe(item, {
-                 attributes: true
-            });
-            }
+            $("#carousel").on('slid.bs.carousel', this.onNewslide)
+
+           // $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
+
+
+
+            // let observer = new MutationObserver(function (mutations) {
+            //     mutations.forEach(function (mutation) {
+            //         let newVal = $(mutation.target).prop(mutation.attributeName);
+            //         if (mutation.attributeName === "class") {
+            //             if (newVal === 'active') {
+            //                 $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
+            //             }
+            //         }
+            //     });
+            // });
+            // let parentDOM = document.getElementById('carousel-inner');
+            //
+            // let items = parentDOM.getElementsByClassName('.carousel-item');
+            // for (let item of items) {
+            //  observer.observe(item, {
+            //      attributes: true
+            // });
+             },
+        beforeDestroy() {
+            $("#carousel").off('slid.bs.carousel', this.onNewslide)
+        },
+
+
         // watch: {
         //     'block.slide': function(old, newval) {
         //         //code
-        //     }
-         },
+        //     }},
+
+
+         //    this.$refs.carousel.addEventListener('slid.bs.carousel', function () {
+         //                $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
+         //            }
+         //    )
+         // },
+
+
+        methods: {
+            onNewslide: function () {
+                alert ('slid')
+               // $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
+            }
+        }
+
+
     }
 
 </script>
