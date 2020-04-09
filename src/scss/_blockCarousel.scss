@@ -133,14 +133,25 @@
   @media (max-width: 740px) {
     margin-left: -6.5%;
   }
+  @media (max-width: 721px) {
+    margin-left: -7%;
+  }
   @media (max-width: 710px) {
     width: 129%;
     margin-left: -8%;
   }
+  @media (max-width: 701px) {
+    width: 139%;
+    margin-left: -9%;
+  }
+  @media (max-width: 691px) {
+    margin-left: -10%;
+  }
   @media (max-width: 655px) {
-    height: 324px;
-    width: 85%;
-    margin-top: -253px;
+    height: 316px;
+    width: 93%;
+    margin-top: -250px;
+    margin-left: 0;
   }
   @media (max-width: 514px) {
     visibility: hidden;
