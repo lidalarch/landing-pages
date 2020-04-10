@@ -5,7 +5,6 @@
         <h1>{{ block.title }}</h1>
         <p>{{ block.text }}</p>
 
-        <div class="item-prev"></div>
 
         <div id="carousel" ref="carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
@@ -32,9 +31,19 @@
             </ol>
         </div>
 
-        <div class="item-next"></div>
 
         <div v-if="block.picture" class="background-image"></div>
+
+
+        <slick ref="slick" :options="slickOptions">
+
+            <div :class="'slide-item ' + (slide.isActive ? 'active' : '')"
+                 v-for="slide of block.slides" :key="slide.id">
+                <img :src="slide.picture" :alt="slide.id">
+            </div>
+
+        </slick>
+
 
         <button v-if="block.button" class="btn btn-danger">
             <a v-if="block.button.url" :href="block.button.url" target="_blank">
@@ -46,96 +55,49 @@
 </template>
 
 <script>
-    import $ from 'jquery';
+    // import $ from 'jquery';
+    import Slick from 'vue-slick';
 
     export default {
         name: 'BlockCarousel',
-        components: {},
+        components: {Slick},
         props: {
             block: Object,
         },
 
-        computed: {
-            // activeItems: function () {
-            //     return this.block.slides.filter(function (item) {
-            //         return item.isActive
-            //     })
-            // }
+        data() {
+            return {
+                slickOptions: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '600px',
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                    infinite: true,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                centerMode: true,
+                                centerPadding: '600px',
+                            }
+                        },
+                        {
+                            breakpoint: 375,
+                            settings: {
+                                centerMode: false,
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                },
+            };
         },
 
         mounted() {
-            //$('.carousel.carousel-multi-item .carousel-item').each(function(){
-            // let next = $(this).next();
-            // if (!next.length) {
-            //     next = $(this).siblings(':first');
-            // }
-            // next.children(':first-child').clone().appendTo($(this));
-            //
-            // for (let i=0;i<2;i++) {
-            //     next=next.next();
-            //     if (!next.length) {
-            //         next=$(this).siblings(':first');
-            //     }
-            //     next.children(':first-child').clone().appendTo($(this));
-            // }
-            //});
-            //$(document).ready(function () {
-            //      $("#carousel").on('slid.bs.carousel', function () {
-            //          $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-            //      });
-           // });
 
-
-            $("#carousel").on('slid.bs.carousel', this.onNewslide)
-
-           // $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-
-
-
-            // let observer = new MutationObserver(function (mutations) {
-            //     mutations.forEach(function (mutation) {
-            //         let newVal = $(mutation.target).prop(mutation.attributeName);
-            //         if (mutation.attributeName === "class") {
-            //             if (newVal === 'active') {
-            //                 $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-            //             }
-            //         }
-            //     });
-            // });
-            // let parentDOM = document.getElementById('carousel-inner');
-            //
-            // let items = parentDOM.getElementsByClassName('.carousel-item');
-            // for (let item of items) {
-            //  observer.observe(item, {
-            //      attributes: true
-            // });
-             },
-        beforeDestroy() {
-            $("#carousel").off('slid.bs.carousel', this.onNewslide)
-        },
-
-
-        // watch: {
-        //     'block.slide': function(old, newval) {
-        //         //code
-        //     }},
-
-
-         //    this.$refs.carousel.addEventListener('slid.bs.carousel', function () {
-         //                $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-         //            }
-         //    )
-         // },
-
-
-        methods: {
-            onNewslide: function () {
-                alert ('slid')
-               // $('#carousel .carousel-inner .carousel-item.active').clone(true).unwrap().appendTo($('.item-prev').empty());
-            }
         }
-
-
     }
 
 </script>
