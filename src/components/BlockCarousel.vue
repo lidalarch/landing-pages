@@ -9,12 +9,6 @@
 
         <div id="carousel" ref="carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-            <ol class="carousel-indicators">
-                <li :class="{active: slide.isActive}"
-                    v-for="slide of block.slides" :key="slide.id"
-                    data-target="#carousel" :data-slide-to="slide.id-1"></li>
-            </ol>
-
             <div id="carousel-inner" class="carousel-inner" role="listbox">
                 <div :class="'carousel-item ' + (slide.isActive ? 'active' : '')"
                      v-for="slide of block.slides" :key="slide.id">
@@ -30,6 +24,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+
+            <ol class="carousel-indicators">
+                <li :class="{active: slide.isActive}"
+                    v-for="slide of block.slides" :key="slide.id"
+                    data-target="#carousel" :data-slide-to="slide.id-1"></li>
+            </ol>
         </div>
 
         <div class="item-next"></div>

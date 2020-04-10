@@ -69,7 +69,7 @@
   @media (max-width: 768px) {
     padding: 0;
   }
-  @media (max-width: 514px) {
+  @media (max-width: 549px) {
     margin-bottom: 23px;
   }
   @media (max-width: 375px) {
@@ -87,19 +87,30 @@
 
   z-index: 2;
 
-  @media (max-width: 655px) {
+  @media (max-width: 685px) {
     height: 232px;
     max-width: 400px;
   }
-  @media (max-width: 514px) {
+  @media (max-width: 549px) {
     width: 100%;
-    height: 290px;
+    height: 249px;
+    margin-top: 0;
+  }
+  @media (max-width: 427px) {
+    height: 235px;
+  }
+  @media (max-width: 405px) {
+    width: 100%;
+    height: 216px;
     margin-top: 0;
   }
   @media (max-width: 375px) {
     width: 100%;
-    height: 290px;
+    height: 216px;
     margin-top: 0;
+  }
+  @media (max-width: 373px) {
+    height: 179px;
   }
 }
 
@@ -147,13 +158,19 @@
   @media (max-width: 691px) {
     margin-left: -10%;
   }
-  @media (max-width: 655px) {
+  @media (max-width: 685px) {
     height: 316px;
-    width: 93%;
+    width: 82%;
+    margin: auto;
     margin-top: -250px;
-    margin-left: 0;
   }
-  @media (max-width: 514px) {
+  @media (max-width: 649px) {
+    width: 530px;
+  }
+  @media (max-width: 556px) {
+    width: 525px;
+  }
+  @media (max-width: 549px) {
     visibility: hidden;
   }
   @media (max-width: 375px) {
@@ -214,13 +231,17 @@
 }
 
 .block-carousel .carousel-indicators {
-  bottom: -134px;
+  position: relative;
+  margin-top: 60px;
 
-  @media (max-width: 514px) {
-    bottom: -32px;
+  @media (max-width: 685px) {
+    margin-top: 35px;
+  }
+  @media (max-width: 549px) {
+    margin-top: -60px;
   }
   @media (max-width: 375px) {
-    bottom: 4px;
+    margin-top: -60px;
   }
 }
 
@@ -262,16 +283,20 @@
     margin-top: -380px;
     left: -120%;
   }
-  @media (max-width: 655px) {
+  @media (max-width: 685px) {
     margin-top: -250px;
     left: -177%;
   }
-  @media (max-width: 514px) {
+  @media (max-width: 549px) {
     margin-top: 5px;
     left: 38px;
   }
+  @media (max-width: 405px) {
+    margin-top: 49px;
+    left: 38px;
+  }
   @media (max-width: 375px) {
-    margin-top: 5px;
+    margin-top: 49px;
     left: 38px;
   }
 }
@@ -292,17 +317,21 @@
     margin-top: -398px;
     left: 689%;
   }
-  @media (max-width: 655px) {
+  @media (max-width: 685px) {
     margin-top: -275px;
     left: 744%
   }
-  @media (max-width: 514px) {
+  @media (max-width: 549px) {
     margin-top: -59px;
     left: 492%;
   }
+  @media (max-width: 405px) {
+    margin-top: -58px;
+    left: 491%;
+  }
   @media (max-width: 375px) {
-    margin-top: -59px;
-    left: 492%;
+    margin-top: -58px;
+    left: 491%;
   }
 }
 
@@ -317,7 +346,7 @@
 .block-carousel .carousel-inner .carousel-item img {
 //  flex-basis: 30%;
 
-  @media (max-width: 514px) {
+  @media (max-width: 549px) {
     border-radius: 10px;
   }
   @media (max-width: 375px) {

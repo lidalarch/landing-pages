@@ -37,8 +37,13 @@
   @media (max-width: 768px) {
     margin-top: 70px;
   }
+  @media (max-width: 472px) {
+    margin-top: 110px;
+    margin-bottom: -40px;
+  }
   @media (max-width: 375px) {
     margin-top: 85px;
+    margin-bottom:0;
   }
 }
 
@@ -53,6 +58,9 @@
   @media (max-width: 655px) {
     height: 232px;
     max-width: 400px;
+  }
+  @media (max-width: 429px) {
+    height: 201px;
   }
   @media (max-width: 375px) {
     margin-top: 0;
@@ -81,10 +89,15 @@
 }
 
 .block-carousel.page1-carousel .carousel-indicators {
-  bottom: -70px;
+  margin-top: -13px;
 
+  @media (max-width: 472px) {
+    margin-top: -60px;
+    margin-left: 77px;
+  }
   @media (max-width: 375px) {
-    bottom: -85px;
+    margin-top: -60px;
+    margin-left: 77px;
   }
 }
 
@@ -98,6 +111,10 @@
   }
   @media (max-width: 655px) {
     margin-top: -250px;
+  }
+  @media (max-width: 472px) {
+    margin-top: 20px;
+    left: 100%;
   }
   @media (max-width: 375px) {
     margin-top: 20px;
@@ -116,8 +133,12 @@
   @media (max-width: 655px) {
     margin-top: -275px;
   }
+  @media (max-width: 472px) {
+    margin-top: -60px;
+    left: 518%;
+  }
   @media (max-width: 375px) {
-    margin-top: -56px;
+    margin-top: -60px;
     left: 518%;
   }
 }

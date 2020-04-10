@@ -29,7 +29,9 @@
   border-radius: 0;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-
+  @media (max-width: 991px) {
+    padding: 46px 11px 0 48px;
+  }
   @media (max-width: 768px) {
     flex-basis: 80%;
     margin-bottom: 32px;

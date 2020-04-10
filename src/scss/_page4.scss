@@ -28,6 +28,10 @@
     background-size: 304%;
     background-position: -229px -194px;
   }
+  @media (max-width: 366px) {
+    background-size: 304%;
+    background-position: -229px -134px;
+  }
 }
 
 #page4 .picture-title h1 {
@@ -55,6 +59,15 @@
     font-size: 44px;
     line-height: 44px;
   }
+  @media (max-width: 353px) {
+    font-size: 40px;
+  }
+  @media (max-width: 333px) {
+    font-size: 36px;
+  }
+  @media (max-width: 300px) {
+    font-size: 34px;
+  }
 }
 
 #page4 .picture-title button {
@@ -70,7 +83,7 @@
     top: 321px;
   }
   @media (max-width: 375px) {
-    width: 350px;
+    width: 93%;
     top: 321px;
   }
 }
@@ -86,6 +99,7 @@
   @media (max-width: 375px) {
     flex-basis: 100%;
     margin-bottom: 29px;
+    padding: 48px 10px 0 3px;
   }
 }
 
@@ -120,6 +134,9 @@
 
   @media (max-width: 375px) {
     margin: 11px 11px 127px 17px;
+  }
+  @media (max-width: 368px) {
+    margin-top: 25px;
   }
 }
 
