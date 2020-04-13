@@ -68,19 +68,20 @@
         data() {
             return {
                 slickOptions: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     centerMode: true,
-                    centerPadding: '600px',
+                    centerPadding: '60px',
                     autoplay: true,
                     autoplaySpeed: 3000,
                     dots: true,
                     infinite: true,
+                    //variableWidth: true,
                     responsive: [
                         {
                             breakpoint: 768,
                             settings: {
                                 centerMode: true,
-                                centerPadding: '600px',
+                                centerPadding: '60px',
                             }
                         },
                         {
