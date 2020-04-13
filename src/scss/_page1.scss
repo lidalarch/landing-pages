@@ -23,19 +23,13 @@
     margin: 13px 10px 125px 16px;
     padding: 20px 0 11px 0;
     line-height: 18px;
-    //margin-top: 13px;
-    //margin-bottom: 125px;
   }
 }
 
 #page1 .block-contacts .contact-card:nth-child(2n) button {
 
   @media (max-width: 375px) {
-    //margin: 11px 10px 125px 16px;
     margin-top: 11px;
-    //margin-left: 16px;
-    //margin-right: 10px;
-    //line-height: 18px;
   }
   @media (max-width: 368px) {
     margin-top: 25px;
