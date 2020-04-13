@@ -21,11 +21,6 @@
         <a class="slick-prev" v-on:click="prev"></a>
         <a class="slick-next" v-on:click="next"></a>
 
-        <ol class="carousel-indicators slick-dots">
-            <li :class="{active: slide.isActive}"
-                v-for="slide of block.slides" :key="slide.id"
-                ></li>
-        </ol>
 
         <div v-if="block.picture" class="background-image"></div>
 
@@ -60,9 +55,9 @@
                     dots: true,
                     infinite: true,
                     //variableWidth: true,
-                    prevArrow: $(".slick-prev"),
-                    nextArrow: $(".slick-next"),
-                    appendDots: $(".slick-dots"),
+                     prevArrow: $(".slick-prev"),
+                     nextArrow: $(".slick-next"),
+                    // appendDots: $(".slick-dots"),
                     responsive: [
                         {
                             breakpoint: 768,
