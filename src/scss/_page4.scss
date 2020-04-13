@@ -6,6 +6,7 @@
 #page4 {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 #page4 .picture-title {
@@ -125,7 +126,10 @@
   margin-top: 27px;
 
   @media (max-width: 375px) {
-    margin-top: 15px;
+    //margin-top: 15px;
+    margin: 15px 11px 123px 17px;
+    padding: 20px 0 11px 0;
+    line-height: 17px;
   }
 }
 
