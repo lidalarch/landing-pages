@@ -31,8 +31,8 @@
   }
 }
 
-.block-carousel.page1-carousel button {
-  margin-top: 70px;
+.block-carousel.page1-carousel .btn.btn-danger {
+  margin-top: 32px;
 
   @media (max-width: 768px) {
     margin-top: 70px;
@@ -89,7 +89,7 @@
 }
 
 .block-carousel.page1-carousel .carousel-indicators {
-  margin-top: -13px;
+  margin-top: 144px;
 
   @media (max-width: 472px) {
     margin-top: -60px;
