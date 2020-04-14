@@ -77,48 +77,51 @@
   }
 }
 
-.block-carousel .carousel {
-  height: 373px;
-  max-width: 597px;
-  margin: auto;
-  margin-top: 70px;
-
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-
-  z-index: 2;
-
-  @media (max-width: 685px) {
-    height: 232px;
-    max-width: 400px;
-  }
-  @media (max-width: 549px) {
-    width: 100%;
-    height: 249px;
-    margin-top: 0;
-  }
-  @media (max-width: 427px) {
-    height: 235px;
-  }
-  @media (max-width: 405px) {
-    width: 100%;
-    height: 216px;
-    margin-top: 0;
-  }
-  @media (max-width: 375px) {
-    width: 100%;
-    height: 216px;
-    margin-top: 0;
-  }
-  @media (max-width: 373px) {
-    height: 179px;
-  }
-}
+////
+//.block-carousel .carousel {
+//  height: 373px;
+//  max-width: 597px;
+//  margin: auto;
+//  margin-top: 70px;
+//
+//  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+//
+//  z-index: 2;
+//
+//  @media (max-width: 685px) {
+//    height: 232px;
+//    max-width: 400px;
+//  }
+//  @media (max-width: 549px) {
+//    width: 100%;
+//    height: 249px;
+//    margin-top: 0;
+//  }
+//  @media (max-width: 427px) {
+//    height: 235px;
+//  }
+//  @media (max-width: 405px) {
+//    width: 100%;
+//    height: 216px;
+//    margin-top: 0;
+//  }
+//  @media (max-width: 375px) {
+//    width: 100%;
+//    height: 216px;
+//    margin-top: 0;
+//  }
+//  @media (max-width: 373px) {
+//    height: 179px;
+//  }
+//}
 
 .block-carousel .background-image {
   height: 469px;
   max-width: 787px;
   margin: auto;
-  margin-top: -398px;
+
+  margin-top: -471px;
+  //margin-left: 152px;
 
   z-index: 1;
 
@@ -131,7 +134,7 @@
   @media (max-width: 991px) {
     height: 468px;
     width: 115%;
-    margin-top: -398px;
+    margin-top: -470px;
     margin-left: -49px;
   }
   @media (max-width: 767px) {
@@ -183,7 +186,7 @@
   flex-direction: row;
   padding: 0 43px;
   margin: auto;
-  margin-top: 226px;
+  margin-top: -3px;
 
   width: 360px;
   height: 40px;
@@ -193,12 +196,12 @@
   border-radius: 2px;
 
   @media (max-width: 768px) {
-    margin-top: 100px;
+    margin-top: -12px;
   }
   @media (max-width: 375px) {
     visibility: hidden;
-    width: 330px;
-    margin-top: 60px;
+    //width: 330px;
+    //margin-top: 60px;
   }
 }
 
@@ -230,184 +233,216 @@
   text-decoration: none;
 }
 
-.block-carousel .carousel-indicators {
-  position: relative;
-  margin-top: 144px;
+//.block-carousel .carousel-indicators {
+//  position: relative;
+//  margin-top: 144px;
+//
+//  @media (max-width: 685px) {
+//    margin-top: 35px;
+//  }
+//  @media (max-width: 549px) {
+//    margin-top: -60px;
+//  }
+//  @media (max-width: 375px) {
+//    margin-top: -60px;
+//  }
+//}
+//
+//.block-carousel .carousel-indicators li {
+//  position: static;
+//  width: 8px;
+//  max-height: 8px;
+//
+//  margin: 8px;
+//
+//  background: url('../assets/Ellipse-2-1.svg') no-repeat;
+//  background-size: cover;
+//  background-position: center center;
+//}
+//
+//.block-carousel .carousel-indicators li.active {
+//
+//  margin: 8px;
+//
+//  background: url('../assets/Ellipse-2.svg') no-repeat;
+//  background-size: cover;
+//  background-position: center center;
+//}
+//
+//.block-carousel .carousel .carousel-control-prev-icon {
+//  position: relative;
+//  width: 40px;
+//  height: 40px;
+//  margin-top: -383px;
+//  left: -180%;
+//
+//  background-image: url('../assets/arrow-left.svg');
+//
+//  @media (max-width: 917px) {
+//    margin-top: -383px;
+//    left: -127%;
+//  }
+//  @media (max-width: 768px) {
+//    margin-top: -380px;
+//    left: -120%;
+//  }
+//  @media (max-width: 685px) {
+//    margin-top: -250px;
+//    left: -177%;
+//  }
+//  @media (max-width: 549px) {
+//    margin-top: 5px;
+//    left: 38px;
+//  }
+//  @media (max-width: 405px) {
+//    margin-top: 49px;
+//    left: 38px;
+//  }
+//  @media (max-width: 375px) {
+//    margin-top: 49px;
+//    left: 38px;
+//  }
+//}
+//
+//.block-carousel .carousel .carousel-control-next-icon {
+//  position: relative;
+//  width: 40px;
+//  height: 40px;
+//  margin-top: -402px;
+//  left: 747%;
+//
+//  background-image: url('../assets/arrow-right.svg');
+//
+//  @media (max-width: 917px) {
+//    left: 695%;
+//  }
+//  @media (max-width: 768px) {
+//    margin-top: -398px;
+//    left: 689%;
+//  }
+//  @media (max-width: 685px) {
+//    margin-top: -275px;
+//    left: 744%
+//  }
+//  @media (max-width: 549px) {
+//    margin-top: -59px;
+//    left: 492%;
+//  }
+//  @media (max-width: 405px) {
+//    margin-top: -58px;
+//    left: 491%;
+//  }
+//  @media (max-width: 375px) {
+//    margin-top: -58px;
+//    left: 491%;
+//  }
+//}
 
-  @media (max-width: 685px) {
-    margin-top: 35px;
-  }
-  @media (max-width: 549px) {
-    margin-top: -60px;
-  }
-  @media (max-width: 375px) {
-    margin-top: -60px;
-  }
-}
-
-.block-carousel .carousel-indicators li {
-  position: static;
-  width: 8px;
-  max-height: 8px;
-
-  margin: 8px;
-
-  background: url('../assets/Ellipse-2-1.svg') no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.block-carousel .carousel-indicators li.active {
-
-  margin: 8px;
-
-  background: url('../assets/Ellipse-2.svg') no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.block-carousel .carousel .carousel-control-prev-icon {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  margin-top: -383px;
-  left: -180%;
-
-  background-image: url('../assets/arrow-left.svg');
-
-  @media (max-width: 917px) {
-    margin-top: -383px;
-    left: -127%;
-  }
-  @media (max-width: 768px) {
-    margin-top: -380px;
-    left: -120%;
-  }
-  @media (max-width: 685px) {
-    margin-top: -250px;
-    left: -177%;
-  }
-  @media (max-width: 549px) {
-    margin-top: 5px;
-    left: 38px;
-  }
-  @media (max-width: 405px) {
-    margin-top: 49px;
-    left: 38px;
-  }
-  @media (max-width: 375px) {
-    margin-top: 49px;
-    left: 38px;
-  }
-}
-
-.block-carousel .carousel .carousel-control-next-icon {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  margin-top: -402px;
-  left: 747%;
-
-  background-image: url('../assets/arrow-right.svg');
-
-  @media (max-width: 917px) {
-    left: 695%;
-  }
-  @media (max-width: 768px) {
-    margin-top: -398px;
-    left: 689%;
-  }
-  @media (max-width: 685px) {
-    margin-top: -275px;
-    left: 744%
-  }
-  @media (max-width: 549px) {
-    margin-top: -59px;
-    left: 492%;
-  }
-  @media (max-width: 405px) {
-    margin-top: -58px;
-    left: 491%;
-  }
-  @media (max-width: 375px) {
-    margin-top: -58px;
-    left: 491%;
-  }
-}
-
-
-.block-carousel .carousel-inner .carousel-item img {
-
-  @media (max-width: 549px) {
-    border-radius: 10px;
-  }
-  @media (max-width: 375px) {
-    border-radius: 10px;
-  }
-}
-
-.block-carousel .item-prev .carousel-item {
-  height: 373px;
-  max-width: 597px;
-  margin-left: -530px;
-  margin-top: 101px;
-
-  //border: black 1px solid;
-
-  @media (max-width: 768px) {
-    visibility: hidden;
-  }
-}
-
+//
+//.block-carousel .carousel-inner .carousel-item img {
+//
+//  @media (max-width: 549px) {
+//    border-radius: 10px;
+//  }
+//  @media (max-width: 375px) {
+//    border-radius: 10px;
+//  }
+//}
+//
+//.block-carousel .item-prev .carousel-item {
+//  height: 373px;
+//  max-width: 597px;
+//  margin-left: -530px;
+//  margin-top: 101px;
+//
+//  //border: black 1px solid;
+//
+//  @media (max-width: 768px) {
+//    visibility: hidden;
+//  }
+//}
 
 
 .block-carousel .slick-slider {
   position: static;
   display: block;
 
-  margin-left: -564px;
-  margin-right: -390px;
-  margin-top: 77px;
-  margin-bottom: 698px;
+  //margin-left: -617px;
+  //margin-right: -863px;
+  margin-left: -532px;
+  margin-right: -744px;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    margin-top: 32px;
+    margin-left: -696px;
+    margin-right: -844px;
+  }
+  @media (max-width: 375px) {
+    margin-top: -40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.block-carousel .slick-slide {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.block-carousel .slick-slide  img {
+.block-carousel .slick-slide img {
   height: 305px;
-  margin-left: 50px;
-  margin-right: 50px;
+
+  @media (max-width: 375px) {
+    height: 215px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @media (max-width: 320px) {
+    height: 182px;
+  }
 }
 
 .block-carousel .slick-center img {
-  height: 367px;
-  margin-top: -28px;
-  margin-left: 63px;
-  margin-bottom: 8px;
-  margin-right: 63px;
+  height: 371px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: 375px) {
+    height: 215px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @media (max-width: 320px) {
+    height: 182px;
+  }
 }
 
-.block-carousel .slick-center + .slick-slide {
-  margin-left: 63px;
-}
+.block-carousel .slick-list {
 
-.block-carousel .slick-slider .slick-dots {
-  position: relative;
-  left: 87px;
-  top: 8px;
+  @media (max-width: 375px) {
+    border-radius: 10px;
+  }
 }
 
 .block-carousel .slick-prev {
   position: relative;
   width: 40px;
   height: 40px;
-  margin-top: -936px;
-  left: 150px;
+  left: 654px;
+  top: 232px;
+  z-index: 3;
 
   background-image: url('../assets/arrow-left.svg');
+
+  @media (max-width: 768px) {
+    left: 658px;
+    top: 231px;
+  }
+  @media (max-width: 375px) {
+    left: 44px;
+    top: 336px;
+  }
+  @media (max-width: 320px) {
+    left: -9px;
+    top: 303px;
+  }
 }
 
 .block-carousel .slick-prev::before {
@@ -418,14 +453,39 @@
   position: relative;
   width: 40px;
   height: 40px;
-  margin-top: -50px;
-  left: 919px;
+  left: 1483px;
+  top: -185px;
+  z-index: 3;
 
   background-image: url('../assets/arrow-right.svg');
+
+  @media (max-width: 768px) {
+    left: 1385px;
+    top: -188px;
+  }
+  @media (max-width: 375px) {
+    left: 260px;
+    top: 73px;
+  }
 }
 
 .block-carousel .slick-next::before {
   visibility: hidden;
+}
+
+.block-carousel .slick-slider .slick-dots {
+  position: relative;
+  left: -107px;
+  top: 41px;
+
+  @media (max-width: 768px) {
+    left: -71px;
+    top: 40px;
+  }
+  @media (max-width: 375px) {
+    left: 0;
+    top: 21px;
+  }
 }
 
 .block-carousel .slick-dots li {
@@ -447,4 +507,8 @@
   background: url('../assets/Ellipse-2.svg') no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.slick-dots li button:before {
+  visibility: hidden;
 }

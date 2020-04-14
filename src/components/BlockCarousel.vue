@@ -18,8 +18,8 @@
 
         </slick>
 
-        <a class="slick-prev" v-on:click="prev"></a>
-        <a class="slick-next" v-on:click="next"></a>
+<!--        <a class="slick-prev" v-on:click="prev"></a>-->
+<!--        <a class="slick-next" v-on:click="next"></a>-->
 
 
         <div v-if="block.picture" class="background-image"></div>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-    import $ from 'jquery';
+    //import $ from 'jquery';
     import Slick from 'vue-slick';
 
     export default {
@@ -51,12 +51,11 @@
                     centerMode: true,
                     centerPadding: '0px',
                     //autoplay: true,
-                    autoplaySpeed: 3000,
+                    autoplaySpeed: 10000,
                     dots: true,
                     infinite: true,
-                    //variableWidth: true,
-                     prevArrow: $(".slick-prev"),
-                     nextArrow: $(".slick-next"),
+                     //prevArrow: $(".slick-prev"),
+                     //nextArrow: $(".slick-next"),
                     // appendDots: $(".slick-dots"),
                     responsive: [
                         {
@@ -64,12 +63,14 @@
                             settings: {
                                 centerMode: true,
                                 centerPadding: '0px',
+                                slidesToShow: 1
                             }
                         },
                         {
                             breakpoint: 375,
                             settings: {
-                                centerMode: false,
+                                centerMode: true,
+                                centerPadding: '0px',
                                 slidesToShow: 1
                             }
                         }
@@ -78,15 +79,15 @@
             };
         },
 
-        methods: {
-            next() {
-                this.$refs.slick.next();
-            },
-            prev() {
-                this.$refs.slick.prev();
-            },
-
-        }
+        // methods: {
+        //     next() {
+        //         this.$refs.slick.next();
+        //     },
+        //     prev() {
+        //         this.$refs.slick.prev();
+        //     },
+        //
+        // }
     }
 
 </script>
