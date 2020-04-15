@@ -78,11 +78,10 @@
 }
 
 .block-carousel .background-image {
-  height: 469px;
-  max-width: 787px;
+  height: 467px;
+  max-width: 789px;
   margin: auto;
-
-  margin-top: -471px;
+  margin-top: -467px;
 
   z-index: 1;
 
@@ -93,10 +92,8 @@
   box-sizing: border-box;
 
   @media (max-width: 991px) {
-    height: 468px;
     width: 115%;
-    margin-top: -470px;
-    margin-left: -49px;
+    margin-left: -50px;
   }
   @media (max-width: 767px) {
     margin-left: -4%;
