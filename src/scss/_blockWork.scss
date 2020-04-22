@@ -83,6 +83,12 @@
   max-height: 166px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .work .card .picture  img {
+      width: 68%;
+  }
+}
+
 .work .background-image {
   width: 115%;
   height: 297px;

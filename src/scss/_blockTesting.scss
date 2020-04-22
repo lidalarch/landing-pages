@@ -83,6 +83,15 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .testing .card:last-child img {
+
+    @media (max-width: 768px) {
+      width: 43%;
+    }
+  }
+}
+
 .testing .card:nth-last-child(2) {
   flex-basis: 48%;
 

@@ -7,6 +7,18 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .page2-pluses .cards {
+
+    @media (max-width: 768px) {
+      margin-left: 10%;
+    }
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+}
+
 .page2-pluses h6 {
   margin-left: 22px;
   margin-top: 99px;
@@ -41,6 +53,7 @@
   @media (max-width: 768px) {
     flex-basis: 80%;
     min-height: 268px;
+    -ms-flex-preferred-size: 93%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

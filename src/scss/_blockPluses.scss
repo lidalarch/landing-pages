@@ -1,17 +1,5 @@
 
 
-//.pluses {
-//  padding-right: 0;
-//  @media (max-width: 768px) {
-//    margin-left: 10%;
-//    margin-right: 10%;
-//  }
-//  @media (max-width: 375px) {
-//    margin-left: 3%;
-//    margin-right: 3%;
-//  }
-//}
-
 .pluses h6 {
   margin-top: 168px;
 
@@ -50,12 +38,25 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .pluses .cards {
+
+    @media (max-width: 768px) {
+      margin-left: 10%;
+    }
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+}
+
 .pluses .card {
   min-height: 218px;
   border-radius: 0;
 
   @media (max-width: 768px) {
     flex-basis: 80%;
+    -ms-flex-preferred-size: 93%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
@@ -98,6 +99,7 @@
 
   @media (max-width: 768px) {
     flex-basis: 80%;
+    -ms-flex-preferred-size: 93%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
@@ -111,6 +113,7 @@
 
   @media (max-width: 768px) {
     flex-basis: 80%;
+    -ms-flex-preferred-size: 93%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

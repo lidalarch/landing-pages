@@ -1,5 +1,4 @@
 
-
 .block-contacts .cards {
   display: flex;
   flex-direction: row;
@@ -12,12 +11,23 @@
   @media (max-width: 768px) {
     justify-content: space-evenly;
   }
-  @media (max-width: 375px) {
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .block-contacts .cards {
+
+    @media (max-width: 768px) {
+      margin-left: 10%;
+    }
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
   }
 }
 
 .block-contacts .contact-card {
   flex-basis: 40%;
+  -ms-flex-preferred-size: 27%;
 
   height: auto;
   padding: 46px 25px 0 48px;
@@ -29,16 +39,23 @@
   border-radius: 0;
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 1199px) {
+    -ms-flex-preferred-size: 25%;
+  }
   @media (max-width: 991px) {
     padding: 46px 11px 0 48px;
+    -ms-flex-preferred-size: 23%;
   }
   @media (max-width: 768px) {
     flex-basis: 80%;
     margin-bottom: 32px;
     padding: 46px 118px 0 48px;
+    -ms-flex-preferred-size: 66%;
   }
   @media (max-width: 550px) {
     padding: 46px 34px 0 48px;
+    -ms-flex-preferred-size: 73%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
@@ -61,13 +78,18 @@
   flex-basis: 57%;
   margin-left: 15px;
 
+  @media (max-width: 991px) {
+    -ms-flex-preferred-size: 53%;
+  }
   @media (max-width: 768px) {
     flex-basis: 80%;
     margin-left: 0;
     padding: 46px 100px 0 48px;
+    -ms-flex-preferred-size: 68.5%;
   }
   @media (max-width: 550px) {
     padding: 46px 36px 0 48px;
+    -ms-flex-preferred-size: 72.5%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
