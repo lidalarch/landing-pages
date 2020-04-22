@@ -1,5 +1,4 @@
 
-
 .block-main.cards {
   display: flex;
   flex-direction: row;
@@ -36,6 +35,19 @@
 
   @media (max-width: 768px) {
     flex-basis: 50%;
+    -ms-flex-preferred-size: 49.85%;
+  }
+  @media (max-width: 677px) {
+    -ms-flex-preferred-size: 49.82%;
+  }
+  @media (max-width: 567px) {
+    -ms-flex-preferred-size: 49.8%;
+  }
+  @media (max-width: 512px) {
+    -ms-flex-preferred-size: 49.75%;
+  }
+  @media (max-width: 413px) {
+    -ms-flex-preferred-size: 49.7%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

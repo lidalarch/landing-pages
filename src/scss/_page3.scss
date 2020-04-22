@@ -97,6 +97,7 @@
   @media (max-width: 768px) {
     flex-basis: 83%;
     padding: 46px 124px 0 48px;
+    -ms-flex-preferred-size: 71%;
   }
   @media (max-width: 534px) {
     padding: 46px 34px 0 48px;
@@ -104,6 +105,7 @@
   @media (max-width: 375px) {
     flex-basis: 100%;
     padding: 47px 10px 0 3px;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
@@ -111,12 +113,15 @@
 
   @media (max-width: 768px) {
     padding: 46px 95px 0 48px;
+    flex-basis: 100%;
+    -ms-flex-preferred-size: 75%;
   }
   @media (max-width: 534px) {
     padding: 46px 36px 0 48px;
   }
   @media (max-width: 375px) {
     padding: 45px 17px 0 2px;
+    -ms-flex-preferred-size: 95%;
   }
 }
 

@@ -45,6 +45,15 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .page3-pluses .cards {
+
+    @media (max-width: 375px) {
+      margin-left: 15px;
+    }
+  }
+}
+
 .page3-pluses .card {
 
   flex-basis: 31.5%;
@@ -56,6 +65,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 93%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
@@ -67,6 +77,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 93%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
@@ -78,6 +89,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 93%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
@@ -89,6 +101,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 93%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
@@ -100,6 +113,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 93%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 

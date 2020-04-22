@@ -33,6 +33,15 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .can-do .cards {
+
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+}
+
 .can-do .card {
   flex-basis: 31.5%;
   min-height: 200px;
@@ -42,6 +51,7 @@
   }
   @media (max-width: 375px) {
     flex-basis: 91%;
+    -ms-flex-preferred-size: 95%;
   }
 }
 
