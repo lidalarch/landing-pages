@@ -50,6 +50,7 @@
 
 .service .card {
   flex-basis: 49%;
+  -ms-flex-preferred-size: 43%;
 
   height: 100%;
   margin-bottom: 75px;
@@ -221,6 +222,15 @@
 
   @media (max-width: 375px) {
     height: auto;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .service .card .picture img {
+
+    @media (max-width: 375px) {
+      max-height: 230px;
+    }
   }
 }
 

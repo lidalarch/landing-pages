@@ -189,3 +189,15 @@
     margin-top: 25px;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #page2 .block-contacts .contact-card:nth-child(2n) button {
+
+    @media (max-width: 375px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 368px) {
+      margin-top: 25px;
+    }
+  }
+}

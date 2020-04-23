@@ -3,16 +3,17 @@
 
         <h6 v-if="block.subtitle"><i><img src="/img/icons/Ellipse.svg"/></i>{{ block.subtitle }}</h6>
         <h1>{{ block.title }}</h1>
-        <p>{{ block.text }}</p>
 
         <slick ref="slick" :options="slickOptions">
 
             <div :class="'slide-item ' + (slide.isActive ? 'active' : '')"
                  v-for="slide of block.slides" :key="slide.id">
+                <p>{{ slide.text }}</p>
                 <img :src="slide.picture" :alt="slide.id">
             </div>
             <div :class="'slide-item ' + (slide.isActive ? 'active' : '')"
                  v-for="slide of block.slides" :key="slide.id">
+                <p>{{ slide.text }}</p>
                 <img :src="slide.picture" :alt="slide.id">
             </div>
 
@@ -50,10 +51,11 @@
                     slidesToShow: 3,
                     centerMode: true,
                     centerPadding: '0px',
-                    autoplay: true,
+                    //autoplay: true,
                     autoplaySpeed: 10000,
                     dots: true,
                     infinite: true,
+                    adaptiveHeight: true,
                      //prevArrow: $(".slick-prev"),
                      //nextArrow: $(".slick-next"),
                     // appendDots: $(".slick-dots"),

@@ -31,7 +31,7 @@
 }
 
 .block-carousel h1 {
-  margin-bottom: 14px;
+  margin-bottom: -9px;
 
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -55,7 +55,7 @@
 }
 
 .block-carousel p {
-  padding: 0 57px;
+  padding: 0;
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -65,21 +65,11 @@
   text-align: center;
 
   color: #3F3D56;
-
-  @media (max-width: 768px) {
-    padding: 0;
-  }
-  @media (max-width: 560px) {
-    margin-bottom: 23px;
-  }
-  @media (max-width: 375px) {
-    margin-bottom: 23px;
-  }
 }
 
 .block-carousel .background-image {
   height: 467px;
-  max-width: 789px;
+  max-width: 780px;
   margin: auto;
   margin-top: -467px;
 
@@ -185,6 +175,11 @@
   margin: 10px 0;
 }
 
+.block-carousel  .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
 .block-carousel .btn.btn-danger a:hover {
   text-decoration: none;
 }
@@ -193,10 +188,7 @@
   position: static;
   display: block;
 
-  margin-left: -532px;
-  margin-right: -744px;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: -23px -719px 0 -524px;
 
   @media (max-width: 1199px) {
     margin-left: -607px;
@@ -246,11 +238,13 @@
 }
 
 .block-carousel .slick-slide img {
-  max-height: 305px;
+  max-height: 371px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (max-width: 685px) {
     max-height: 255px;
-    margin-top: 0;
+    margin-top: 28px;
     margin-bottom: 0;
   }
   @media (max-width: 560px) {
@@ -296,24 +290,49 @@
   }
 }
 
+.block-carousel .slick-slide p {
+ visibility: hidden;
+  height: 119px;
+}
+
+.block-carousel .slick-center p {
+  visibility: visible;
+  margin: -2px 20px -4px -180px;
+
+  @media (max-width: 768px) {
+    margin: 0 0 31px -146px;
+  }
+  @media (max-width: 560px) {
+    margin-bottom: 23px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: 23px;
+  }
+}
+
 .block-carousel .slick-prev {
   position: relative;
   width: 40px;
   height: 40px;
-  left: 654px;
-  top: 232px;
+  left: 645px;
+  top: 342px;
   z-index: 3;
 
-  background-image: url('../assets/arrow-left.png');
-  background-size: cover;
-  background-position: center center;
+  background: transparent url('../assets/ic-arrow-back-24px.png') no-repeat 50% 50%;
+  background-size: 63%;
+
+  border: 0.5px solid #EF4744;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 
   @media (max-width: 1024px) {
     left: 713px;
   }
   @media (max-width: 768px) {
     left: 658px;
-    top: 231px;
+    top: 284px;
   }
   @media (max-width: 767px) {
     left: -70px;
@@ -349,6 +368,39 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .block-carousel .slick-prev {
+
+    @media (max-width: 375px) {
+      left: 23px;//
+      top: 323px;//
+    }
+    @media (max-width: 360px) {
+      top: 315px;//
+      left: 25px;
+    }
+    @media (max-width: 345px) {
+      top: 305px;//
+      left: 12px;
+    }
+    @media (max-width: 330px) {
+      top: 295px;//
+    }
+    @media (max-width: 320px) {
+      left: -9px;
+      top: 241px;//
+    }
+  }
+}
+
+.block-carousel .slick-prev:hover {
+  background-image: url('../assets/ic-arrow-back-24px-white.png');
+  background-color: #c82333;
+  border-color: #bd2130;
+
+  box-shadow: 0 8px 12px rgba(239, 71, 68, 0.6);
+}
+
 .block-carousel .slick-prev::before {
   visibility: hidden;
 }
@@ -357,20 +409,25 @@
   position: relative;
   width: 40px;
   height: 40px;
-  left: 1483px;
-  top: -185px;
+  left: 1473px;
+  top: -188px;
   z-index: 3;
 
-  background-image: url('../assets/arrow-right.png');
-  background-size: cover;
-  background-position: center center;
+  background: transparent url('../assets/ic-arrow-next-24px.png') no-repeat 50% 50%;
+  background-size: 63%;
+
+  border: 0.5px solid #EF4744;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 
   @media (max-width: 991px) {
     left: 1443px;
   }
   @media (max-width: 768px) {
     left: 1385px;
-    top: -188px;
+    top: -174px;
   }
   @media (max-width: 767px) {
     left: 624px;
@@ -415,18 +472,26 @@
   }
 }
 
+.block-carousel .slick-next:hover {
+  background-image: url('../assets/ic-arrow-next-24px-white.png');
+  background-color: #c82333;
+  border-color: #bd2130;
+
+  box-shadow: 0 8px 12px rgba(239, 71, 68, 0.6);
+}
+
 .block-carousel .slick-next::before {
   visibility: hidden;
 }
 
 .block-carousel .slick-slider .slick-dots {
   position: relative;
-  left: -107px;
+  left: -99px;
   top: 41px;
 
   @media (max-width: 768px) {
     left: -71px;
-    top: 40px;
+    top: -15px;
   }
   @media (max-width: 685px) {
     left: -30px;

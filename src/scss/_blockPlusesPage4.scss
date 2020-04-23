@@ -31,12 +31,25 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .page4-pluses .cards {
+
+    @media (max-width: 768px) {
+      margin-left: 70px;
+    }
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+}
+
 .page4-pluses .card {
   flex-basis: 48.8%;
   min-height: 330px;
 
   @media (max-width: 768px) {
     flex-basis: 78.5%;
+    -ms-flex-preferred-size: 89%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;
@@ -50,6 +63,7 @@
   @media (max-width: 768px) {
     flex-basis: 78.5%;
     min-height: 330px;
+    -ms-flex-preferred-size: 89%;
   }
   @media (max-width: 375px) {
     flex-basis: 100%;

@@ -68,6 +68,7 @@
   @media (min-width: 713px) and (max-width: 768px) {
     flex-basis: 29.5%;
     margin: 0 15px 30px 15px;
+    -ms-flex-preferred-size: 28.5%;
   }
   @media (max-width: 712px) {
     flex-basis: 27.5%;
@@ -80,12 +81,15 @@
   @media (max-width: 444px) {
     flex-basis: 25.5%;
     margin: 0 15px 30px 15px;
+    -ms-flex-preferred-size: 25%;
   }
   @media (max-width: 375px) {
     flex-basis: 42%;
+    -ms-flex-preferred-size: 41%;
   }
   @media (max-width: 374px) {
     flex-basis: 41%;
+    -ms-flex-preferred-size: 40%;
   }
   @media (max-width: 333px) {
     flex-basis: 100%;

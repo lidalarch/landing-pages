@@ -54,10 +54,6 @@
 
 .testing .card:nth-child(2) img {
   max-width: 100%;
-
-  //@media (max-width: 768px) {
-  //  max-width: 100%;
-  //}
 }
 
 .testing .card:last-child {
@@ -88,6 +84,9 @@
 
     @media (max-width: 768px) {
       width: 43%;
+    }
+    @media (max-width: 375px) {
+      width: 92%;
     }
   }
 }
