@@ -65,8 +65,10 @@
 
 .block-contacts .contact-card button:hover {
   color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
+  background-color: #d8403d;
+  border-color: #d8403d;
+
+  transition: background 0.5s ease, color 0.2s linear;
 }
 
 .block-contacts .contact-card button:hover a {
@@ -118,8 +120,10 @@
 
 .block-contacts .contact-card:nth-child(2n) button:hover {
   color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
+  background-color: #d8403d;
+  border-color: #d8403d;
+
+  transition: background 0.5s ease, color 0.2s linear;
 }
 
 .block-contacts .contact-card:nth-child(2n) button:hover a {

@@ -156,7 +156,6 @@
                     class: 'page1-carousel',
                     title: 'Как это работает',
                     subtitle: 'тестирование макетов онлайн',
-                    //text: 'Загружайте макеты в SaaS\u2011конструктор опросов Анкетолог',
                     slides: [
                         {
                             id: 1,
@@ -172,6 +171,24 @@
                         },
                         {
                             id: 3,
+                            text: 'Собираете результаты',
+                            picture: '/img/slides/Browser_2-1.png',
+                            isActive: false,
+                        },
+                        {
+                            id: 4,
+                            text: 'Загружайте макеты в SaaS\u2011конструктор опросов Анкетолог',
+                            picture: '/img/slides/Browser.png',
+                            isActive: false,
+                        },
+                        {
+                            id: 5,
+                            text: 'Выбираете аудиторию для тестирования',
+                            picture: '/img/slides/Browser_1-1.png',
+                            isActive: false,
+                        },
+                        {
+                            id: 6,
                             text: 'Собираете результаты',
                             picture: '/img/slides/Browser_2-1.png',
                             isActive: false,

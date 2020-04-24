@@ -241,7 +241,7 @@
 
   background: #FFFFFF;
 
-  border: 0.5px solid #EF4744;
+  border: 1px solid #EF4744;
   box-sizing: border-box;
   border-radius: 2px;
 
@@ -268,8 +268,10 @@
 
 .service .card button:hover {
   color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
+  background-color: #d8403d;
+  border-color: #d8403d;
+
+  transition: background 0.5s ease, color 0.2s linear;
 }
 
 .service .card button:hover a {

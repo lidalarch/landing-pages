@@ -11,11 +11,6 @@
                 <p>{{ slide.text }}</p>
                 <img :src="slide.picture" :alt="slide.id">
             </div>
-            <div :class="'slide-item ' + (slide.isActive ? 'active' : '')"
-                 v-for="slide of block.slides" :key="slide.id">
-                <p>{{ slide.text }}</p>
-                <img :src="slide.picture" :alt="slide.id">
-            </div>
 
         </slick>
 
