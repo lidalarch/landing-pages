@@ -128,7 +128,7 @@
 }
 
 .block-carousel.page1-carousel .slick-slide p {
-  height: auto;
+  height: 21px;
 
   @media (max-width: 768px) {
     margin: 0 0 31px -146px;
@@ -136,8 +136,8 @@
   @media (max-width: 767px) {
     margin: 0 0 31px 0;
   }
-  @media (max-width: 560px) {
-    margin-bottom: 0;
+  @media (max-width: 492px) {
+    height: 65px;
   }
   @media (max-width: 375px) {
     margin: 0 0 19px 0;
@@ -152,10 +152,10 @@
     margin: 0 0 31px -146px;
   }
   @media (max-width: 767px) {
-  margin: 0 0 31px 0;
+    margin: 0 0 31px 0;
   }
-  @media (max-width: 560px) {
-    margin-bottom: 0;
+  @media (max-width: 492px) {
+    height: 65px;
   }
   @media (max-width: 375px) {
     margin: 0 0 19px 0;
@@ -182,13 +182,16 @@
   }
   @media (max-width: 560px) {
     left: -53px;
-    top: 195px;
+    top: 223px;
+  }
+  @media (max-width: 492px) {
+    top: 236px;
   }
   @media (max-width: 480px) {
-    top: 195px;
+    top: 248px;
   }
   @media (max-width: 425px) {
-    top: 160px;
+    top: 212px;
   }
   @media (max-width: 375px) {
     left: 52px;
@@ -222,26 +225,26 @@
 
     @media (max-width: 375px) {
       left: 33px; //
-      top: 310px; //
+      top: 396px; //
     }
     @media (max-width: 370px) {
-      top: 306px; //
+      top: 392px; //
       left: 37px;
     }
     @media (max-width: 360px) {
-      top: 300px; //
+      top: 386px; //
       left: 25px;
     }
     @media (max-width: 345px) {
-      top: 290px; //
+      top: 376px; //
       left: 20px;
     }
     @media (max-width: 330px) {
-      top: 280px; //
+      top: 367px; //
       left: 5px;
     }
     @media (max-width: 320px) {
-      top: 241px; //
+      top: 331px; //
       left: -5px;
     }
   }
@@ -260,10 +263,11 @@
   }
   @media (max-width: 767px) {
     left: 641px;
+    top: -173px;
   }
   @media (max-width: 750px) {
     left: 628px;
-    top: -163px;
+    top: -164px;
   }
   @media (max-width: 730px) {
     left: 596px;
@@ -271,19 +275,19 @@
   }
   @media (max-width: 700px) {
     left: 568px;
-    top: -135px;
+    top: -134px;
   }
   @media (max-width: 660px) {
     left: 528px;
-    top: -180px;
+    top: -179px;
   }
   @media (max-width: 640px) {
     left: 508px;
-    top: -167px;
+    top: -168px;
   }
   @media (max-width: 620px) {
     left: 484px;
-    top: -157px;
+    top: -156px;
   }
   @media (max-width: 590px) {
     left: 456px;
@@ -295,7 +299,7 @@
   }
   @media (max-width: 520px) {
     left: 400px;
-    top:-115px;
+    top: -97px;
   }
   @media (max-width: 480px) {
     left: 367px;
@@ -311,7 +315,7 @@
   }
   @media (max-width: 400px) {
     left: 302px;
-    top: -98px;
+    top: -96px;
   }
   @media (max-width: 375px) {
     left: 268px;
@@ -319,6 +323,75 @@
   }
   @media (max-width: 320px) {
     top: 25px;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .block-carousel.page1-carousel .slick-next {
+
+    @media (max-width: 767px) {
+      left: 641px;
+      top: -164px;//
+    }
+    @media (max-width: 750px) {
+      left: 628px;
+      top: -154px;//
+    }
+    @media (max-width: 730px) {
+      left: 596px;
+      top: -141px;//
+    }
+    @media (max-width: 700px) {
+      left: 568px;
+      top: -124px;//
+    }
+    @media (max-width: 660px) {
+      left: 528px;
+      top: -169px;//
+    }
+    @media (max-width: 640px) {
+      left: 508px;
+      top: -158px;//
+    }
+    @media (max-width: 620px) {
+      left: 484px;
+      top: -146px;//
+    }
+    @media (max-width: 590px) {
+      left: 456px;
+      top: -130px;//
+    }
+    @media (max-width: 560px) {
+      left: 436px;
+      top: -107px;//
+    }
+    @media (max-width: 520px) {
+      left: 400px;
+      top: -89px;//
+    }
+    @media (max-width: 480px) {
+      left: 367px;
+      top: -89px;//
+    }
+    @media (max-width: 450px) {
+      left: 343px;
+      top: -75px;//
+    }
+    @media (max-width: 425px) {
+      left: 322px;
+      top: -100px;//
+    }
+    @media (max-width: 400px) {
+      left: 302px;
+      top: -88px;//
+    }
+    @media (max-width: 375px) {
+      left: 268px;
+      top: 53px;
+    }
+    @media (max-width: 320px) {
+      top: 25px;
+    }
   }
 }
 
