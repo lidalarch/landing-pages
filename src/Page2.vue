@@ -69,26 +69,26 @@
                             id: 1,
                             text: `Онлайн-конструктор анкет с 18-ю типами вопросов и настройками внутренней
                                 логики для создания опросов любой сложности`,
-                            picture: '/img/slides/slide-1.gif',
+                            picture: '/img/slides/slide-1-sm.gif',
                             isActive: true,
                         },
                         {
                             id: 2,
                             text: `Мультимедиа: добавляйте в свою анкету изображения, видео и звуковые файлы`,
-                            picture: '/img/slides/slide-2.gif',
+                            picture: '/img/slides/slide-2-sm.gif',
                             isActive: false,
                         },
                         {
                             id: 3,
                             text: `Задание квот на конкретные варианты ответов`,
-                            picture: '/img/slides/slide-3.gif',
+                            picture: '/img/slides/slide-3-sm.gif',
                             isActive: false,
                         },
                         {
                             id: 4,
                             text: `Более 100 шаблонов анкет: выберите подходящее вам готовое решение
                                 и начинайте опрос`,
-                            picture: '/img/slides/slide-4.gif',
+                            picture: '/img/slides/slide-4-sm.gif',
                             isActive: false,
                         },
                     ],

@@ -9,7 +9,9 @@
             <div :class="'slide-item ' + (slide.isActive ? 'active' : '')"
                  v-for="slide of block.slides" :key="slide.id">
                 <p>{{ slide.text }}</p>
-                <img :src="slide.picture" :alt="slide.id">
+                <div class="placeholder">
+                    <img :src="slide.picture" :alt="slide.id">
+                </div>
             </div>
 
         </slick>
@@ -46,7 +48,7 @@
                     slidesToShow: 3,
                     centerMode: true,
                     centerPadding: '0px',
-                    //autoplay: true,
+                    autoplay: true,
                     autoplaySpeed: 10000,
                     dots: true,
                     infinite: true,

@@ -71,7 +71,7 @@
   height: 466px;
   max-width: 780px;
   margin: auto;
-  margin-top: -465px;
+  margin-top: -587px;
 
   z-index: 1;
 
@@ -81,33 +81,37 @@
 
   box-sizing: border-box;
 
+  @media (max-width: 1024px) {
+    margin-top: -613px;
+  }
   @media (max-width: 991px) {
     width: 115%;
     margin-left: -50px;
-    margin-top: -466px;
+    margin-top: -604px;
   }
   @media (max-width: 768px) {
     height: 470px;
     max-width: 788px;
-    margin-top: -467px;
+    margin-top: -561px;
   }
   @media (max-width: 767px) {
     height: 467px;
-    margin-left: -5%;
-    margin-top: -461px;
+    max-width: 783px;
+    margin-left: -33px;
+    margin-top: -515px;
   }
   @media (max-width: 701px) {
     width: 139%;
     margin-left: -9%;
   }
   @media (max-width: 691px) {
-    margin-left: -9.3%;
+    width: 118.5%;
   }
   @media (max-width: 685px) {
-    height: 316px;
+    height: 319px;
     width: 82%;
-    margin-left: 59px;
-    margin-top: -339px;
+    margin-left: 60px;
+    margin-top: -371px;
   }
   @media (max-width: 675px) {
     width: 83.4%;
@@ -429,6 +433,20 @@
   }
 }
 
+.block-carousel .placeholder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+
+.block-carousel .placeholder img {
+  position: absolute;
+ // width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .block-carousel .slick-slide p {
   visibility: hidden;
   height: 119px;
@@ -572,7 +590,7 @@
   width: 40px;
   height: 40px;
   left: 1476px;
-  top: -188px;
+  top: -307px;
   z-index: 3;
 
   background: transparent url('../assets/ic-arrow-next-24px.png') no-repeat 50% 50%;
@@ -584,20 +602,28 @@
 
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 
+  @media (max-width: 1199px) {
+    top: -304px;
+  }
+  @media (max-width: 1024px) {
+    left: 1493px;
+    top: -332px;
+  }
   @media (max-width: 991px) {
-    left: 1443px;
+    left: 1466px;
+    top: -324px;
   }
   @media (max-width: 768px) {
     left: 1385px;
-    top: -184px;
+    top: -278px;
   }
   @media (max-width: 767px) {
     left: 624px;
-    top: -180px;
+    top: -231px;
   }
   @media (max-width: 685px) {
     left: 436px;
-    top: -134px;
+    top: -167px;
   }
   @media (max-width: 620px) {
     left: 425px;
@@ -704,21 +730,26 @@
 .block-carousel .slick-slider .slick-dots {
   position: relative;
   left: -97px;
-  top: 41px;
+  top: -79px;
 
+  @media (max-width: 1024px) {
+    left: -119px;
+    top: -107px;
+  }
   @media (max-width: 768px) {
     left: -74px;
-    top: 44px;
+    top: -50px;
   }
   @media (max-width: 767px) {
     left: -42px;
+    top:  -18px;
   }
   @media (max-width: 701px) {
     left: -10px;
   }
   @media (max-width: 685px) {
     left: -30px;
-    top: 8px;
+    top: -15px;
   }
   @media (max-width: 650px) {
     left: -10px;
