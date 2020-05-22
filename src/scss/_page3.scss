@@ -113,13 +113,14 @@
 
   @media (max-width: 768px) {
     padding: 46px 95px 0 48px;
-    flex-basis: 100%;
-    -ms-flex-preferred-size: 75%;
+    flex-basis: 83%;
+    -ms-flex-preferred-size: 71%;
   }
   @media (max-width: 534px) {
     padding: 46px 36px 0 48px;
   }
   @media (max-width: 375px) {
+    flex-basis: 100%;
     padding: 45px 17px 0 2px;
     -ms-flex-preferred-size: 95%;
   }
